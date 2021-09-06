@@ -155,3 +155,69 @@ ol {
     line-height: 36px;
     float: left;
   }
+
+  /* This section focuses on filters */
+
+  .filter {
+    padding: 5px 20px;
+    margin: 0px 2px;
+    font-size: 19px;
+    border-radius: 50px;
+    border: 2px solid #1D70B8;;
+  }
+
+  
+  .filter.inactive {
+    background-color: #ffffff;
+    color: #1D70B8;
+  }
+
+  .filter.inactive:focus {
+    outline: unset;
+    color: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .filter.inactive:hover {
+    background-color: #1D70B8;
+    color: #ffffff;
+  }
+
+  .filter.active {
+    background-color: #1D70B8;
+    color: #ffffff;
+  }
+
+  .filter.active:hover {
+    background-color: #ffffff;
+    color: #1D70B8;
+  }
+
+  .filter.active:focus {
+    outline: unset;
+    color: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+
+  /* This section focuses on the visual inventory components */
+
+  .temporaryBox {
+    background: #F5F4F5;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .componentLink {
+    font-weight: 700;
+    color: #000000 !Important;
+    font-size: 22px;
+  }
+
+  .govuk-grid-column-one-third {
+    padding: 0 15px 60px 15px;
+}
