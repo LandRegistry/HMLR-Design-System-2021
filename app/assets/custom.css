@@ -1,10 +1,42 @@
-govuk-body, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
+/* This section focuses on font-overrides */
+govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
     font-family: 'Roboto', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
     text-transform: uppercase;
 }
+
+h1 {
+    font-size: 100px;
+    font-weight:700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif !important;
+    color: #000000;
+    text-align:center;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+
+.page-subtitle {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight:400;
+  font-family: 'Roboto', sans-serif !important;
+  color: #000000;
+  text-align:center;
+  margin-bottom: 0px;
+}
+
+.govuk-heading-l {
+    margin-bottom: 15px;
+}
+
+.govuk-link:link, a:link, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
+    text-decoration: none;
+}
+
+/* This section focuses on the navigation menu */
 
 .navbar {
     min-height: 155px;
@@ -87,27 +119,43 @@ h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govu
     text-decoration: none;
   }
 
-  .page-title {
-      font-size: 100px;
-      font-weight:700;
-      text-transform: uppercase;
-      font-family: 'Roboto', sans-serif !important;
-      color: #000000;
-      text-align:center;
-      margin-bottom: 20px;
-      margin-top:0px;
+
+  /* This section focuses on layouts */
+
+.govuk-grid-column-full {
+    margin-bottom:60px;
+}
+
+.page-title {
+    margin-bottom:100px;
+}
+
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 15px;
+}
+
+/* This section focuses on lists */
+ol {
+    list-style: none;
+    counter-reset: item;
+    padding-inline-start: 0px;
   }
-
-  .page-subtitle {
-    font-size: 26px;
-    line-height: 34px;
-    font-weight:400;
-    font-family: 'Roboto', sans-serif !important;
+  li {
+    counter-increment: item;
+    margin-bottom: 20px;
+  }
+  li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #ffffff;
+    border-radius: 100%;
     color: #000000;
-    text-align:center;
-    margin-bottom: 0px;
-}
-
-#contentSection {
-    margin-top:100px;
-}
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    border: 1px solid #979797;
+    width: 36px;
+    line-height: 36px;
+    float: left;
+  }
