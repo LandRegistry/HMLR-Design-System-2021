@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
   HMLR Design System 2021
@@ -7,14 +7,33 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        HMLR Design System
-      <p>
-        Coming soon...
+  <div class="govuk-grid-row govuk-body">
+
+    <div class="govuk-grid-column-full" id="titleSection">
+      <h1 class="page-title">
+        Design System
+      </h1>
+      <p class="page-subtitle">
+        Design and build digital services for HM Land Registry
       </p>
     </div>
+
+    <div class="govuk-grid-column-full" id="contentSection">
+        <h2 class="govuk-heading-l">
+          Design principles
+        </h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt eu nisi, egestas ut et sed sed eget porta. Felis cursus a scelerisque faucibus aliquam.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh cursus nulla lacus lacinia amet varius. Elementum venenatis venenatis egestas sodales fringilla eu. </li>
+            <li>Lorem ipsum dolor, consectetur adipiscing elit. Ut a, mi felis facilisi consequat. Lacus,diam montes, parturient. Faucibus ultrices quis mauris lectus ultrices. </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, nunc, orci sit turpis tempor. Justo, venenatis porttitor nunc, mauris morbi.</li>
+        </ol>
+
+
+      </div>
+
   </div>
 
 {% endblock %}
+
+

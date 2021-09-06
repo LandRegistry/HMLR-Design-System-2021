@@ -1,0 +1,113 @@
+govuk-body, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
+    text-transform: uppercase;
+}
+
+.navbar {
+    min-height: 155px;
+}
+
+.navbarlinks {
+    overflow: hidden;
+    background-color: #ffffff;
+    float:right;
+    padding: 50px 50px 50px 25px;
+  }
+  
+  .navbarlinks a {
+    float: left;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight:700;
+    text-transform: uppercase;
+    margin: 0 15px;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px; 
+    font-weight:700; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight:400;
+    text-transform:unset;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    padding:15px 0px;
+  }
+
+.navbarlogo {
+    float:left;
+    padding: 50px 25px 50px 50px;
+}
+
+  .navbarlogo a {
+    font-size: 48px;
+    font-weight:600;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .page-title {
+      font-size: 100px;
+      font-weight:700;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif !important;
+      color: #000000;
+      text-align:center;
+      margin-bottom: 20px;
+      margin-top:0px;
+  }
+
+  .page-subtitle {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight:400;
+    font-family: 'Roboto', sans-serif !important;
+    color: #000000;
+    text-align:center;
+    margin-bottom: 0px;
+}
+
+#contentSection {
+    margin-top:100px;
+}

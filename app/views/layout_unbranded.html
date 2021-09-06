@@ -1,17 +1,55 @@
 {% extends "layout.html" %}
 
-{% block headIcons %}
-  <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
-{% endblock %}
-
 {% block head %}
   <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if gt IE 8]><!--><link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
+  <link href="/public/custom.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   {% for stylesheetUrl in extensionConfig.stylesheets %}
     <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
   {% endfor %}
+
 {% endblock %}
 
-{% block header %}{% endblock %}
+{% block header %}
+
+<div class="navbar">
+
+<div class="navbarlogo">
+  <a href="/index.html">HMLR<span style="font-weight:100;">DS</span></a>
+</div>
+
+<div class="navbarlinks">
+  <a href="/index.html">Home</a>
+  <a href="/gettingstarted/">Getting started</a>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="/design/">Design <i class="fa fa-caret-down"></i></a>
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="/design/components.html">Components</a>
+      <a href="/design/content.html">Content</a>
+      <a href="/design/fontstypography.html">Fonts & Typography</a>
+      <a href="/design/icons.html">Icons</a>
+      <a href="/design/images.html">Images</a>
+      <a href="/design/patterns.html">Patterns</a>
+      <a href="/design/styles.html">Styles</a>
+    </div>
+  </div> 
+  <a href="/accessibility/">Accessibility</a>
+  <a href="/community/">Community</a>
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
 {% block footer %}{% endblock %}
