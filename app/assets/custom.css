@@ -22,6 +22,8 @@ h1 {
   color: #000000;
   text-align:center;
   margin-bottom: 0px;
+  max-width: 960px;
+  margin: auto;
 }
 
 .govuk-heading-l {
@@ -128,6 +130,12 @@ h1 {
 
 .govuk-body-m, .govuk-body, p {
     margin-bottom: 15px;
+}
+
+.componentTabs {
+    max-width: 960px;
+    margin:auto;
+    float: unset;
 }
 
 /* This section focuses on lists */
