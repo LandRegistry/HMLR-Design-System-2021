@@ -130,6 +130,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+.govuk-width-container.componentPage {
+    max-width: 1100px;
+}
+
 /* This section focuses on lists */
 ol {
     list-style: none;
