@@ -7,6 +7,34 @@
 
 {% block content %}
 
+<style>
+    /* This section focuses on lists */
+ol {
+    list-style: none;
+    counter-reset: item;
+    padding-inline-start: 0px;
+  }
+  li {
+    counter-increment: item;
+    margin-bottom: 20px;
+  }
+  li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #ffffff;
+    border-radius: 100%;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    border: 1px solid #979797;
+    width: 36px;
+    line-height: 36px;
+    float: left;
+  }
+</style>
+
   <div class="govuk-grid-row govuk-body">
 
     <div class="govuk-grid-column-full page-title">
