@@ -117,6 +117,10 @@ h1 {
     text-decoration: none;
   }
 
+  .logoIcons {
+    max-width: 24px;
+    padding-left: 4px; 
+  }
 
   /* This section focuses on layouts */
 
