@@ -1,0 +1,63 @@
+
+{% extends "layout_designsystem.html" %}
+
+{% block pageTitle %}
+  Getting started
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row govuk-body">
+
+    <div class="govuk-grid-column-full">
+      <h1>
+        Components
+      </h1>
+      <p class="page-subtitle" style="max-width: 800px; margin: auto;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry gwarno psum is simply the printing
+      </p>
+    </div>
+
+    <div class="govuk-grid-column-full" style="text-align:center;margin-bottom: 120px;">
+        <a class="filter inactive" href="/design/components.html">All</a>
+        <a class="filter active" href="/design/components-experimental.html">Experimental</a>
+        <a class="filter inactive" href="/design/components-gds.html">GDS</a>
+        <a class="filter inactive" href="/design/components-forms.html">Forms</a>
+        <a class="filter inactive" href="/design/components-buttons.html">Buttons</a>
+        <a class="filter inactive" href="/design/components-visualaids.html">Visual aids</a>
+
+    </div>
+
+
+
+
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Experimental</h2>
+        <p style="margin-bottom: 40px;">Components developed by us, to specifically meet HMLR user needs, that aren’t currently being met by GDS.</p>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+                <div class="temporaryBox"></div>
+                <a class="componentLink" href="/enhanced-dropdown.html">Enhanced dropdown</a>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+                <div class="temporaryBox"></div>
+                <a class="componentLink" href="/print-summary.html">Print summary</a>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+                <div class="temporaryBox"></div>
+                <a class="componentLink" href="/radio-questions.html">Radio questions</a>
+            </div>
+      
+          </div>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
+
+
