@@ -208,3 +208,33 @@ opacity: 0.7;
   .govuk-grid-column-one-third {
     padding: 0 15px 60px 15px;
 }
+
+/* This focuses on the navigation menu for experimental component pages */
+
+
+#horizontal-list li a {
+    font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #000000;
+      padding: 10px 0px 5px 0px;
+      margin: 0px 20px;
+  }
+  
+  #horizontal-list li a.current {
+  border-bottom: 4px solid #1d70b8;
+  }
+  
+  ul#horizontal-list {
+      margin: auto;
+      max-width: fit-content;
+      border-top: 2px solid #f3f2f1;
+      border-bottom: 2px solid #f3f2f1;
+      padding-top: 20px;
+      padding-bottom:20px;
+      margin-bottom: 50px;
+  }
+  
+  ul#horizontal-list li {
+      display: inline;
+  }
