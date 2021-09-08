@@ -238,3 +238,8 @@ opacity: 0.7;
   ul#horizontal-list li {
       display: inline;
   }
+
+
+  .app-step-nav__circle--number {
+    border: solid 1px black;
+  }
