@@ -3,6 +3,7 @@
 
 
 
+
 {% block pageTitle %}
   Getting started
 {% endblock %}
@@ -14,7 +15,136 @@
     max-width: 1200px;
 }
 
+.searchBox {
+    border-width: 1px;
+    background-image:unset;
+    padding-left:10px;
+}
+
+
+.select2-container--default .select2-results__option--group {
+  padding: 0;
+  font-family: arial;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000;
+  line-height: 39px;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+  outline: none;
+}
+
+.select2-container {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single:focus{
+  outline: none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-results__option {
+  padding: 6px 6px 6px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px;
+  color: #000000;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  height: 39px;
+}
+
+.select2-container {
+  width: 275px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.form-label-bold {
+  font-weight: 600;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+  background-color: transparent;
+  background-size: contain;
+  border: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin: auto !important;
+  top: 8px;
+  left: -5px;
+}
+
+.select2-search--dropdown {
+  padding: 0px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  top: -38px;
+  width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 0px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+outline:0;
+}
+
+.select2-dropdown {
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-results__group {
+  padding: 6px 6px 6px 10px;
+}
+
+
+.select2-container--open .select2-dropdown--below {
+    width: unset;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
 </style>
+
 
 
   <div class="govuk-grid-row govuk-body">
@@ -56,7 +186,279 @@
 
       </div>
 
+
+      <div class="govuk-grid-column-full">
+        <div style="max-width: 960px;margin:auto;">
+        <h2 class="govuk-heading-l" style="margin-bottom: 50px;">
+          Examples
+        </h2>
+
+        <div class="govuk-tabs" data-module="govuk-tabs" >
+          <h2 class="govuk-tabs__title">
+            Examples
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#animated">
+                Animated
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#Interactive">
+                Interactive
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#HTML">
+                HTML & Javascript
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#Nunjucks">
+                Nunjucks
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-tabs__panel" id="animated">
+            <img src="/public/images/enhanced_dropdown.gif">
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Interactive">
+
+            
+
+                <form id="search" style="">
+      
+                  <div class="govuk-body" style="margin-bottom: 30px;">
+                      <label class="govuk-label form-label-bold">
+                          Users and groups
+                      </label>
+                      <select id="cat" class="form-control">
+                          <optgroup label="Recent searches">
+                              <option value="NewLayout_Default.html">Andy Carr (you)</option>
+                              <option value="NewLayout_JT.html">John Taylor</option>
+                              <option value="NewLayout_PG.html">Pat Gannon</option>
+                              <option value="NewLayout_NA.html">Nicola Andrews</option>
+                              <option value="NewLayout_JP.html">Jon Parker</option>
+                              </optgroup>
+                              <optgroup label="All colleagues">
+                              <option value="#">Aaron Flynn</option>
+                              <option value="#">Alex Blewett</option>
+                              <option value="NewLayout_Default">Andy Carr</option>
+                              <option value="#">Duncan Anderson</option>
+                              <option value="#">James Thomas</option>
+                              <option value="#">John Baptiste-Kelly</option>
+                              <option value="#">John James</option>
+                              <option value="NewLayout_JT">John Taylor</option>
+                              <option value="NewLayout_JP.html">Jon Parker</option>
+                              <option value="#">Juan Pinto-del-Rio</option>
+                              <option value="#">Lukas Kroening-Maynard</option>
+                              <option value="#">Mark Hornsby</option>
+                              <option value="#">Melvia Mathew</option>
+                              <option value="#">Neil Butler</option>
+                              <option value="NewLayout_NA.html">Nicola Andrews</option>
+                              <option value="NewLayout_PG.html">Pat Gannon</option>
+                              <option value="#">Romani Davies</option>
+                              <option value="#">Simon Skidmore</option>
+                              <option value="#">Sue Watchman</option>
+                              <option value="#">Tony Watson</option>
+                              </optgroup>
+                      </select>
+                  </div>
+      
+              </form>
+        
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="HTML">
+        
+            <div class="app-example__code">
+              <pre data-module="app-copy" tabindex="0"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"govuk-tabs"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__title"</span>&gt;</span>
+            Contents
+          <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__list"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__list-item govuk-tabs__list-item--selected"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#past-day"</span>&gt;</span>
+                Past day
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__list-item"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#past-week"</span>&gt;</span>
+                Past week
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__list-item"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#past-month"</span>&gt;</span>
+                Past month
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__list-item"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#past-year"</span>&gt;</span>
+                Past year
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__panel"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"past-day"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>Past day<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__head"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Case manager<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases opened<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases closed<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>David Francis<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Paul Farmer<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Rita Patel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__panel govuk-tabs__panel--hidden"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"past-week"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>Past week<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__head"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Case manager<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases opened<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases closed<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>David Francis<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>24<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>18<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Paul Farmer<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>16<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>20<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Rita Patel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>24<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>27<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__panel govuk-tabs__panel--hidden"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"past-month"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>Past month<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__head"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Case manager<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases opened<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases closed<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>David Francis<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>98<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>95<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Paul Farmer<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>122<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>131<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Rita Patel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>126<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>142<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-tabs__panel govuk-tabs__panel--hidden"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"past-year"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>Past year<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__head"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Case manager<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases opened<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__header"</span>&gt;</span>Cases closed<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>David Francis<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1380<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1472<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Paul Farmer<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1129<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1083<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__row"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>Rita Patel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1539<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-table__cell"</span>&gt;</span>1265<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            </div>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Nunjucks">
+        
+<h2>Coming soon...</h2>
+
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <div  style="max-width: 960px;margin:auto;">
+            <h2 class="govuk-heading-l">
+              Anatomy
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            <img src="/public/images/enhancedDropdownAnatomy.png">
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-full">
+      <div  style="max-width: 960px;margin:auto;">
+          <h2 class="govuk-heading-l">
+            Why was this component needed?
+          </h2>
+          <p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+
+    </div>
   </div>
+
+
+
+  </div>
+
+
 
 {% endblock %}
 

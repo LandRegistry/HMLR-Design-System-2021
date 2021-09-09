@@ -238,3 +238,98 @@ opacity: 0.7;
   ul#horizontal-list li {
       display: inline;
   }
+
+/* This focuses on the experimental component example section */
+
+
+
+pre {
+    max-width: inherit;
+    margin: 0;
+    padding: 25px;
+    border: 3px solid transparent;
+    outline: 1px solid transparent;
+    color: #0b0c0c;
+    background-color: #f3f2f1;
+    font-size: inherit;
+}
+
+
+
+.app-tabs__container pre {
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.app-copy-button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.14286;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    min-width: 110px;
+    padding: 3px 10px;
+    border: 1px solid #00823b;
+    color: #00823b;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 0 0 #00703c;
+    box-shadow: 0 2px 0 0 #00703c;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.app-copy-button {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.app-tabs__container pre code {
+    display: inline-block;
+    padding: 20px;
+}
+
+.js-enabled .app-tabs__container pre code {
+    padding-top: 45px;
+}
+
+.app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.hljs-tag, .hljs-name, .hljs-attribute {
+    color: #003078;
+    font-weight: normal;
+}
+
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+    color: #00703c;
+}
+
+.hljs-string, .hljs-doctag {
+    color: #d13118;
+}
+
+
+.js-enabled .govuk-tabs__panel {
+    margin-bottom: 0;
+    min-height: 325px;
+}
+
