@@ -333,3 +333,60 @@ pre {
     min-height: 325px;
 }
 
+
+/* This focuses on the getting started section */
+
+
+  @media (min-width: 40.0625em){
+    .app-step-nav--large .app-step-nav__circle--number{
+      border-width: 0.25px;
+      border: solid 1px #b1b4b6;
+
+    }
+
+    .app-step-nav--large .app-step-nav__step:after{
+      left: 0;
+      margin-left: 16px;
+      border-width: 1px;
+      top: 30px;
+    }
+
+    .app-step-nav--large .app-step-nav__step:last-child:before {
+      margin-left: 8.75px;
+      width: 17.5px;
+      border-width: 1px;}
+  }
+
+  span.app-step-nav__circle--number{
+    border: solid 1px #b1b4b6;
+  }
+
+  .app-step-nav__header{
+    border-top: solid 1px #b1b4b6;
+  }
+
+  .app-step-nav__step:last-child:before{
+    border-bottom: solid 1px #b1b4b6;
+  }
+
+  .app-step-nav__step:after{
+    border-left: solid 1px #b1b4b6;
+  }
+
+  .app-step-nav__controls{
+    text-align: left;
+  }
+
+  .app-step-nav__button--controls{
+    padding: 0.5em 0 2em 0;
+    text-decoration: none;
+  }
+
+  .app-step-nav__button--controls:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  
+  .app-step-nav__toggle-link , .js-toggle-link{
+    padding: 0.5em 0 0 0;
+  }

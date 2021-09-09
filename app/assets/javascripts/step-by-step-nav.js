@@ -75,8 +75,7 @@ window.GOVUK.Modules = window.GOVUK.Modules || {};
 
           if (!$(this).find('.js-toggle-link').length) {
             $(this).find('.js-step-title-button').append(
-              '<span class="app-step-nav__toggle-link js-toggle-link" aria-hidden="true" hidden></span>'
-            )
+              '<span class="app-step-nav__toggle-link js-toggle-link" aria-hidden="true" hidden></span>')
           }
         })
       }
