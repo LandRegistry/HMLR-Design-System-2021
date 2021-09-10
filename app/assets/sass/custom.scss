@@ -443,3 +443,10 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     float: left;
     margin-right:20px;
   }
+
+  .hexBackground {
+    background-image: url("/public/images/hex_background.png");
+    background-repeat: no-repeat; 
+    background-size: 66%;
+    background-position-x: center;
+  }
