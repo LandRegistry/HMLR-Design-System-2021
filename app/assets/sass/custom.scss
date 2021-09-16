@@ -159,10 +159,11 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
       &:focus {
         outline: unset;
         color: unset;
-        background-color: unset;
-        box-shadow: unset;
+        background-color: #ffdd00;
+        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+        border: 2px solid #ffdd00;
       }
-  
+
       &:hover {
         background-color: #1D70B8;
         color: #ffffff;
@@ -180,8 +181,9 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
       &:focus {
         outline: unset;
         color: unset;
-        background-color: unset;
-        box-shadow: unset;
+        background-color: #ffdd00;
+        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+        border: 2px solid #ffdd00;
       }
     }
   }
@@ -326,6 +328,13 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     margin-bottom: 0;
     min-height: 325px;
   }
+
+.anatomy-image {
+  border: 1px solid #b1b4b6;
+  padding:25px;
+}
+
+
   
   /* This focuses on the getting started section */
   
@@ -450,3 +459,35 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     background-size: 66%;
     background-position-x: center;
   }
+
+/* This focuses on numbered lists */
+
+
+ ol.list {
+  list-style: none;
+  counter-reset: item;
+  padding-inline-start: 0px;
+
+  li {
+    counter-increment: item;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+
+    &:before {
+      margin-right: 10px;
+      content: counter(item);
+      background: #ffffff;
+      border-radius: 100%;
+      color: #000000;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      display: block;
+      border: 1px solid #979797;
+      width: 36px;
+      line-height: 36px;
+      float: left;
+      margin-top: -7px;
+    }
+  }
+}
