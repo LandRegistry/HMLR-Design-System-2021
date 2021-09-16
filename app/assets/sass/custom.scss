@@ -231,11 +231,18 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
+    text-align: center;
   
     li {
       display: inline;
+      list-style: none;
     }
+
+
   }
+
+
+
   
   /* This focuses on the experimental component example section */
   
