@@ -14,6 +14,70 @@
     max-width: 1200px;
 }
 
+.hods-timeline {
+    overflow: hidden;
+    position: relative;
+}
+
+.hods-timeline__title {
+margin-bottom:5px;
+}
+
+
+.hods-timeline__item {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.hods-timeline__item:before {
+    background-color: #1d70b8;
+    content: "";
+    padding-top: .3em;
+    padding-right: 30px;
+    left: 0;
+    position: absolute;
+    margin-top: .75em;
+    z-index: 1;
+}
+
+.hods-timeline:before {
+    background-color: #1d70b8;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 1em;
+    padding-left: .3em;
+    z-index: 1;
+}
+
+.hods-timeline__title {
+    font-family: inherit;
+    display: inline;
+}
+
+.hods-timeline__by {
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-size: .875rem;
+    line-height: 1.1428571429;
+    color: #505a5f;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -60,64 +124,57 @@
       <div class="govuk-grid-column-full">
 
 
-
-        <div style="max-width: 768px;margin:auto; background-color: #DDFEEF;padding: 25px;margin-bottom: 25px;">
-           <div class="iconStatus">
-            <img src="/public/images/icon_Design.png">
-           </div>
-          <h3 class="govuk-heading-m statusTitle">
-              Design <span style="font-weight: 400;">- Approved (29/07/21)</span>
-            </h3>
-            <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-
+        <div class="hods-timeline">
+          <div class="hods-timeline__item">
+            <h2 class="hods-timeline__title">
+              Response submitted
+            </h2>
+            <p class="hods-timeline__date">
+              <time datetime="2021-03-15T16:27:00.000Z">
+                3/15/2021, 4:27:00 PM
+              </time>
+            </p>
+            <p class="hods-timeline__description">
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="hods-timeline__item">
+            <h2 class="hods-timeline__title">
+              Issue under investigation
+            </h2>
+            <p class="hods-timeline__date">
+              <time datetime="2021-03-15T10:04:00.000Z">
+                3/15/2021, 10:04:00 AM
+              </time>
+            </p>
+            <p class="hods-timeline__description">
+              This is a description of the event. This field
+              accepts unformatted text only.
+            </p>
+          </div>
+          <div class="hods-timeline__item">
+            <h2 class="hods-timeline__title">
+              Issue raised on GitHub
+            </h2>
+            <p class="hods-timeline__date">
+              <time datetime="2021-01-25T09:35:00.000Z">
+                1/25/2021, 9:35:00 AM
+              </time>
+            </p>
+            <p class="hods-timeline__description">
+              This is a description of the event.
+            </p>
+          </div>
         </div>
-
-        <div style="max-width: 768px;margin:auto; background-color: #FFF6E5;padding: 25px;margin-bottom: 25px;">
-          <div class="iconStatus">
-            <img src="/public/images/icon_UR.png">
-           </div>
-          <h3 class="govuk-heading-m statusTitle">
-            User research <span style="font-weight: 400;">- Requires further testing</span>
-          </h3>
-          <p style="margin-bottom: 0px;">Quam nisi in lectus eu malesuada est molestie praesent enim.</p>
-        </div>
-
-        <div style="max-width: 768px;margin:auto; background-color: #DDFEEF;padding: 25px;margin-bottom: 25px;">
-          <div class="iconStatus">
-            <img src="/public/images/icon_Devs.png">
-           </div>
-          <h3 class="govuk-heading-m statusTitle">
-            Developers <span style="font-weight: 400;">- Approved (14/08/21)</span>
-          </h3>
-          <p style="margin-bottom: 0px;">Quam nisi in lectus eu malesuada est molestie praesent enim.</p>
-        </div>
-
-        <div style="max-width: 768px;margin:auto; background-color: #FFEAE5;padding: 25px;margin-bottom: 25px;">
-          <div class="iconStatus">
-            <img src="/public/images/icon_CorpCom.png">
-           </div>
-          <h3 class="govuk-heading-m statusTitle">
-            Corporate comms <span style="font-weight: 400;">- Requires approval</span>
-          </h3>
-          <p style="margin-bottom: 0px;">Quam nisi in lectus eu malesuada est molestie praesent enim.</p>
-        </div>
-
-        <div style="max-width: 768px;margin:auto; background-color: #FFEAE5;padding: 25px;margin-bottom: 25px;">
-          <div class="iconStatus">
-            <img src="/public/images/icon_GDS.png">
-           </div>
-          <h3 class="govuk-heading-m statusTitle">
-            GDS submission <span style="font-weight: 400;">- Not ready</span>
-          </h3>
-          <p style="margin-bottom: 0px;">Quam nisi in lectus eu malesuada est molestie praesent enim.</p>
-        </div>
-
-
-
-
-
-
-
 
 
       </div>
