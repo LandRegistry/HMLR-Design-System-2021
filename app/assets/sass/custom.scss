@@ -230,7 +230,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     border-bottom: 2px solid #f3f2f1;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   
     li {
       display: inline;
@@ -419,6 +419,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   .howToColumn {
     padding-left: 0px;
     padding-right: 30px;
+    padding-bottom:0px;
   }
   
   .howToDo {
