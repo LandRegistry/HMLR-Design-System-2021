@@ -1,14 +1,14 @@
 /* This section focuses on font-overrides */
 
 govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-heading-l, govuk-heading-m, govuk-heading-s {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
   }
   
   h1 {
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
     color: #000000;
     text-align: center;
     margin-bottom: 20px;
@@ -19,7 +19,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     font-size: 26px;
     line-height: 34px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
     color: #000000;
     text-align: center;
     margin-bottom: 0px;
@@ -511,3 +511,9 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     }
   }
 }
+
+ /* GDS Transport Font Family Override */
+
+ .GDSTransport {
+  font-family: "GDS Transport", arial, sans-serif !important;
+ }

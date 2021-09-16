@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 
+
+
 {% block head %}
-  <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if gt IE 8]><!--><link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+{% include "includes/head.html" %}
 
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,7 @@
     <div class="dropdown-content">
       <a href="/design/components/">Components</a>
       <a href="/design/content.html">Content</a>
-      <a href="/design/fontstypography/fontstypography.html">Fonts & Typography</a>
+      <a href="/design/fontstypography/">Fonts & Typography</a>
       <a href="/design/icons.html">Icons</a>
       <a href="/design/images.html">Images</a>
       <a href="/design/layouts.html">Layouts</a>
