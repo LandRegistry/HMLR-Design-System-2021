@@ -341,8 +341,12 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   @media (min-width: 40.0625em) {
     .app-step-nav--large {
       .app-step-nav__circle--number {
-        border-width: 0.25px;
-        border: solid 1px #b1b4b6;
+        border: solid 1px #979797;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
       }
   
       .app-step-nav__step {
@@ -363,20 +367,20 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   }
   
   span.app-step-nav__circle--number {
-    border: solid 1px #b1b4b6;
+    border: solid 1px #979797;
   }
   
   .app-step-nav__header {
-    border-top: solid 1px #b1b4b6;
+    border-top: solid 1px #979797;
   }
   
   .app-step-nav__step {
     &:last-child:before {
-      border-bottom: solid 1px #b1b4b6;
+      border-bottom: solid 1px #979797;
     }
   
     &:after {
-      border-left: solid 1px #b1b4b6;
+      border-left: solid 1px #979797;
     }
   }
   
