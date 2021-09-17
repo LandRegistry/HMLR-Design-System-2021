@@ -248,8 +248,9 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   
   pre {
     max-width: inherit;
+    height: 100%;
     margin: 0;
-    padding: 25px;
+    // padding: 25px;
     border: 3px solid transparent;
     outline: 1px solid transparent;
     color: #0b0c0c;
@@ -321,6 +322,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   .hljs-tag, .hljs-name, .hljs-attribute {
     color: #003078;
     font-weight: normal;
+
   }
   
   .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
@@ -329,11 +331,13 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   
   .hljs-string, .hljs-doctag {
     color: #d13118;
+
   }
   
   .js-enabled .govuk-tabs__panel {
     margin-bottom: 0;
-    min-height: 325px;
+    min-height: 160px;
+
   }
 
 .anatomy-image {
@@ -511,6 +515,8 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     }
   }
 }
+
+
 
  /* GDS Transport Font Family Override */
 
