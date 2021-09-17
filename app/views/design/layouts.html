@@ -7,6 +7,22 @@
 
 {% block content %}
 
+<style>
+
+.blueBlockText {
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin: 0px;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    background-color: #1d70b8;
+
+}
+
+</style>
+
   <div class="govuk-grid-row govuk-body">
 
     <div class="govuk-grid-column-full">
@@ -14,28 +30,73 @@
         Layouts
       </h1>
       <p class="page-subtitle">
-        Additional subtitle text goes here
+        Advice provide from the GDS website
       </p>
     </div>
 
     <div class="govuk-grid-column-full">
         <h2 class="govuk-heading-l">
-          H2 header title
+          Screen size
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet rutrum sem. Integer a neque ex. Ut sed quam commodo, dapibus metus vitae, tincidunt ipsum. In at leo quam. Aliquam erat volutpat. Maecenas id gravida libero. Morbi hendrerit laoreet auctor. Aenean suscipit turpis vel consequat blandit. Fusce accumsan libero erat, sit amet pulvinar dolor elementum a. Mauris rutrum luctus neque.
+          Design for small screens first, starting with a single-column layout.
         </p>
 
          <p>
-            Aliquam at dolor porta, aliquam tortor vel, viverra arcu. Sed in malesuada erat, eget suscipit sem. Pellentesque id risus faucibus, venenatis urna in, volutpat mauris. Praesent lacinia, odio et accumsan gravida, tortor orci efficitur nisi, eget blandit erat dui sed mi. Ut porttitor lobortis ultricies. 
+          For most types of page, we recommend using either a ‘two-thirds’ or a ‘two-thirds and one third layout’. That stops lines of text getting so long that the page becomes difficult to read on desktop devices. This would usually mean no more than 75 characters per line.
          </p>   
 
         <p>
-            Cras nec mauris sit amet dui malesuada fringilla eget in orci. In hac habitasse platea dictumst. Vivamus eget bibendum felis, vitae luctus ipsum. Nulla facilisi. Fusce ut mauris congue, pharetra libero ut, aliquam metus.
+          Never make assumptions about what devices people are using. Design for different screen sizes rather than specific devices.
         </p>
 
+        <p>
+          The default maximum page width is 1020px, but you can make it wider if your content requires it.
+        </p>
 
       </div>
+
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">
+          Grid system examples
+        </h2>
+        
+        <div class="govuk-grid-row" style="margin-bottom:15px;">
+          <div class="govuk-grid-column-full" style="margin-bottom: 15px;">
+            <p class="blueBlockText">govuk-grid-column-full</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-row"   style="margin-bottom:30px;">
+          <div class="govuk-grid-column-one-half">
+            <p class="blueBlockText">govuk-grid-column-one-half</p>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <p class="blueBlockText">govuk-grid-column-one-half</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <p class="blueBlockText">govuk-grid-column-one-third</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <p class="blueBlockText">govuk-grid-column-one-third</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <p class="blueBlockText">govuk-grid-column-one-third</p>
+          </div>
+        </div>
+
+
+
+
+        
+      </div>
+
+
+
+
 
   </div>
 
