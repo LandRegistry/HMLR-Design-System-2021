@@ -1,141 +1,80 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
-  Getting started
+  Design system
 {% endblock %}
 
 {% block content %}
 
+<div class="contentSection">
+
   <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/guidance/">Guidance</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
 
+  <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-      <h1>
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Lorem ipsum</p>
+        <ul>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Lorem ipsum</p>
+        <ul>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
         Guidance
-      </h1>
-      <p class="page-subtitle">
-        A place for advice and answers to common questions.
-      </p>
+        </h1>
+        <p style="font-size:24px;margin-bottom:25px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna feugiat non pellentesque ultricies. Mollis magna facilisis diam id in diam.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna feugiat non pellentesque ultricies. Mollis magna facilisis diam id in diam.
+        </p>
+    </div>
+  </div>
     </div>
 
-    <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-l" style="margin-bottom: 0px;">
-       New components
-      </h2>
 
-      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                What's the process for creating new components?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-            <p class='govuk-body'>This is the content for Writing well for the web.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                Do new experimental components need to be mobile optimised?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            <p class='govuk-body'>This is the content for How people read.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                Can we use open source javascript files?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            <p class='govuk-body'>This is the content for How people read.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                Are nunjucks used by ninjas?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            <p class='govuk-body'>This is the content for How people read.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-l" style="margin-bottom: 0px;">
-       General
-      </h2>
-      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default2">
-
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-                Why do gov.uk websites use a different font to HM Land Registry websites?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-            <p class='govuk-body'>This is the content for Writing well for specialists.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-                Who should we contact if we have a suggestion or spot a mistake?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-            <p class='govuk-body'>This is the content for Know your audience.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                Can I join the design system team?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            <p class='govuk-body'>This is the content for How people read.</p>
-          </div>
-        </div>
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                Why do HM Land Registry have their own design system?
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-            <p class='govuk-body'>This is the content for How people read.</p>
-          </div>
-        </div>
-
-      </div>
 
 
 
   </div>
+
+</div>
 
 {% endblock %}
 

@@ -1,43 +1,80 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
-  Getting started
+  Design system
 {% endblock %}
 
 {% block content %}
 
+<div class="contentSection">
+
   <div class="govuk-grid-row govuk-body">
-
-    <div class="govuk-grid-column-full">
-      <h1>
-        Content
-      </h1>
-      <p class="page-subtitle">
-        Additional subtitle text goes here
-      </p>
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/content/">Content style guide</a>
+          </li>
+        </ol>
+      </div>
     </div>
+  </div>
 
+  <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          H2 header title
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet rutrum sem. Integer a neque ex. Ut sed quam commodo, dapibus metus vitae, tincidunt ipsum. In at leo quam. Aliquam erat volutpat. Maecenas id gravida libero. Morbi hendrerit laoreet auctor. Aenean suscipit turpis vel consequat blandit. Fusce accumsan libero erat, sit amet pulvinar dolor elementum a. Mauris rutrum luctus neque.
-        </p>
-
-         <p>
-            Aliquam at dolor porta, aliquam tortor vel, viverra arcu. Sed in malesuada erat, eget suscipit sem. Pellentesque id risus faucibus, venenatis urna in, volutpat mauris. Praesent lacinia, odio et accumsan gravida, tortor orci efficitur nisi, eget blandit erat dui sed mi. Ut porttitor lobortis ultricies. 
-         </p>   
-
-        <p>
-            Cras nec mauris sit amet dui malesuada fringilla eget in orci. In hac habitasse platea dictumst. Vivamus eget bibendum felis, vitae luctus ipsum. Nulla facilisi. Fusce ut mauris congue, pharetra libero ut, aliquam metus.
-        </p>
-
-
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Lorem ipsum</p>
+        <ul>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Lorem ipsum</p>
+        <ul>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+          <li>
+            <a href="#">Lorem ipsum</a>
+          </li>
+        </ul>
       </div>
 
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+        Content style guide
+        </h1>
+        <p style="font-size:24px;margin-bottom:25px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna feugiat non pellentesque ultricies. Mollis magna facilisis diam id in diam.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna feugiat non pellentesque ultricies. Mollis magna facilisis diam id in diam.
+        </p>
+    </div>
   </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</div>
 
 {% endblock %}
 
