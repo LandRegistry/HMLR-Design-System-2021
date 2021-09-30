@@ -3,6 +3,10 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     font-family: 'Roboto', 'Arial', sans-serif !important;
   }
 
+  .GDSTransport {
+    font-family: "GDS Transport", arial, sans-serif !important;
+   }
+
   
 .govuk-heading-l{
     margin-top: 35px;
@@ -277,4 +281,81 @@ li.current-borderLeft{
     color: #008548;
     font-size: 22px;
     text-decoration: none;
+}
+
+.howTo {
+    border: 1px solid #D8D8D8;
+  }
+  
+  .howToColumn {
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-bottom:0px;
+  }
+  
+  .howToDo {
+    padding: 15px;
+    background: #DDFEEF;
+    border-top: 5px solid #00A459;
+  }
+  
+  .howToDont {
+    padding: 15px;
+    background: #FFEAE5;
+    border-top: 5px solid #EF2825;
+  }
+  
+  .howToTitle {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .howToText {
+    font-size: 16px;
+  }
+
+  .doDontImage {
+    min-height: 220px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  ol.list {
+    list-style: none;
+    counter-reset: item;
+    padding-inline-start: 0px;
+  
+    li {
+      counter-increment: item;
+      margin-bottom: 0px;
+      padding-bottom: 25px;
+  
+      &:before {
+        margin-right: 10px;
+        content: counter(item);
+        background: #ffffff;
+        border-radius: 100%;
+        color: #000000;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        border: 1px solid #979797;
+        width: 36px;
+        line-height: 36px;
+        float: left;
+        margin-top: -7px;
+      }
+    }
+  }
+
+  .app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+li code, td code, p code {
+    padding: 0 5px;
+    color: #d13118;
+    background-color: #f3f2f1;
 }

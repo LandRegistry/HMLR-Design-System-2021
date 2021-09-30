@@ -1,5 +1,5 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2_copy.html" %}
 
 {% block pageTitle %}
   Getting started
@@ -7,118 +7,210 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row govuk-body">
-
-    <div class="govuk-grid-column-full">
-      <h1>
-        Components
-      </h1>
-      <p class="page-subtitle" style="max-width: 750px; margin: auto;">
-        Components are reusable parts of the user interface that have been made to support a variety of applications.
-      </p>
-    </div>
-
-    <div class="govuk-grid-column-full" style="text-align:center;margin-bottom: 120px;">
-        <a class="filter inactive" href="/design/components.html">All</a>
-        <a class="filter inactive" href="/design/components/filter-experimental.html">Experimental</a>
-        <a class="filter inactive" href="/design/components/filter-gds.html">GDS</a>
-        <a class="filter active" href="/design/components/filter-forms.html">Forms</a>
-        <a class="filter inactive" href="/design/components/filter-buttons.html">Buttons</a>
-        <a class="filter inactive" href="/design/components/filter-visualaids.html">Visual aids</a>
-
-    </div>
+<div class="contentSection">
 
 
-
-
-    <div class="govuk-grid-column-full">
-
-        <div class="govuk-grid-row">
+    <div class="govuk-grid-row govuk-body">
+      <div class="govuk-grid-column-full">
+      <div class="sideMenu">
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Principles</p>
+          <ul>
+            <li>
+              <a href="/V2/design/">Design principles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Setup</p>
+          <ul>
+            <li>
+                <a href="/V2/Lauren/design/prototyping">Prototyping</a>
+              </li>
+              <li>
+                <a href="/V2/Lauren/design/developing">Developing</a>
+              </li>
+          </ul>
+        </div>
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Design</p>
+          <ul>
+            <li class="current-borderLeft">
+              <a class="current-main" href="/V2/Lauren/design/components/">Components</a>
+            </li>
+            <li style="margin-left: 20px;">
+              <a  style="font-size: 14px;" href="/V2/Lauren/design/components/experimental/enhanced-dropdown/">Enhanced dropdown</a>
+            </li>
+            <li style="margin-left: 20px;">
+              <a  style="font-size: 14px;" href="/V2/Lauren/design/components/experimental/print-summary/">Print summary</a>
+            </li>
+            <li style="margin-left: 20px;">
+              <a  style="font-size: 14px;" href="/V2/Lauren/design/components/experimental/radio-questions/">Radio questions</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/fontstypography/">Fonts & typography</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/icons.html">Icons</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/images.html">Images</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/layouts.html">Layouts</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/patterns.html">Patterns</a>
+            </li>
+            <li>
+              <a href="/V2/Lauren/design/styles.html">Styles</a>
+            </li>
+          </ul>
+        </div>
+  
+  
+      </div>
+  
+      <div class="right-content">
+  
+        <div class="govuk-grid-column-full">
+          <span class="govuk-caption-xl">Design system</span>
+          <h1 class="govuk-heading-xl">
+          Components
+          </h1>
+  
+  
+        
+          <div class="govuk-grid-column-full" style="padding-left:0px;margin-bottom: 95px;">
+              <a class="filter inactive" href="/V2/Lauren/design/components/">All</a>
+              <a class="filter inactive" href="/V2/Lauren/design/components/filter-experimental.html">Experimental</a>
+              <a class="filter inactive" href="/V2/Lauren/design/components/filter-gds.html">GDS</a>
+              <a class="filter active" href="/V2/Lauren/design/components/filter-forms.html">Forms</a>
+              <a class="filter inactive" href="/V2/Lauren/design/components/filter-buttons.html">Buttons</a>
+              <a class="filter inactive" href="/V2/Lauren/design/components/filter-visualaids.html">Visual aids</a>
       
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/button/"  target="_blank">Button</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/character-count/"  target="_blank">Character count</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/checkboxes/"  target="_blank">Checkboxes</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/date-input/"  target="_blank">Date input</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <a class="componentLink" href="/design/components/experimental/enhanced-dropdown.html">
-                    <div style="max-height: 260px;overflow-y: hidden;"><img src="/public/images/enhanced_dropdown.gif"></div>
-                    Enhanced dropdown
-                </a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/error-message/"  target="_blank">Error message</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/error-summary/"  target="_blank">Error summary</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/fieldset/"  target="_blank">Fieldset</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/file-upload/"  target="_blank">File upload</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/panel/"  target="_blank">Panel</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/radios/"  target="_blank">Radios</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/select/"  target="_blank">Select</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/summary-list/"  target="_blank">Summary list</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/text-input/"  target="_blank">Text input</a>
-            </div>
-
-            <div class="govuk-grid-column-one-third">
-                <div class="temporaryBox"></div>
-                <a class="componentLink" href="https://design-system.service.gov.uk/components/textarea/"  target="_blank">Text area</a>
-            </div>
-
           </div>
-
+      
+        
+        
+        
+          <h2 class="govuk-heading-l">Experimental</h2>
+          <p style="margin-bottom: 40px;">Components developed by us to specifically meet HMLR user needs that aren’t currently being met by the Government Design Service (GDS).</p>
+  
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+                  <a class="componentLink" href="/V2/Lauren/design/components/experimental/enhanced-dropdown/">
+                      <div style="margin-bottom: 25px; max-height: 250px;overflow-y: hidden;"><img src="/public/images/enhanced_dropdown.gif"></div>
+                      Enhanced dropdown
+                  </a>
+              </div>
+        
+          </div>
+      
+        
+          <h2 class="govuk-heading-l">GDS</h2>
+          <p style="margin-bottom: 40px;">These are components that exist within GDS. Clicking on one of the components will link you directly to the component on the GDS website.</p>
+      
+              <div class="govuk-grid-row">
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/button/"  target="_blank">Button</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/character-count/"  target="_blank">Character count</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/checkboxes/"  target="_blank">Checkboxes</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/date-input/"  target="_blank">Date input</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/error-message/"  target="_blank">Error message</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/error-summary/"  target="_blank">Error summary</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/fieldset/"  target="_blank">Fieldset</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/file-upload/"  target="_blank">File upload</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/panel/"  target="_blank">Panel</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/radios/"  target="_blank">Radios</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/select/"  target="_blank">Select</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/summary-list/"  target="_blank">Summary list</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/tag/"  target="_blank">Tag</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/text-input/"  target="_blank">Text input</a>
+                  </div>
+      
+                  <div class="govuk-grid-column-one-third">
+                      <div class="temporaryBox"></div>
+                      <a class="componentLink" href="https://design-system.service.gov.uk/components/textarea/"  target="_blank">Text area</a>
+                  </div>
+      
+        
+              </div>
+        
+          </div>
+        
+        
+        
+        
+          
+  
+  
+  
+  
+          </div>
+      </div>
     </div>
-
-
-
-
+  
+  
+  
+  
+  
+    </div>
+  
   </div>
 
 {% endblock %}
