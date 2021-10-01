@@ -1,3 +1,4 @@
+
 {% extends "layout_designsystem_V2_copy.html" %}
 
 {% block pageTitle %}
@@ -23,11 +24,11 @@
       <div class="sideMenuSection">
         <p class="sideMenuTitle">Setup</p>
         <ul>
-          <li class="current-borderLeft">
-            <a class="current-main" href="/V2/Lauren/design/prototyping.html">Prototyping</a>
+          <li>
+            <a href="/V2/Lauren/design/prototyping">Prototyping</a>
           </li>
           <li>
-            <a href="/V2/Lauren/design/developing.html">Developing</a>
+            <a href="/V2/Lauren/design/developing">Developing</a>
           </li>
         </ul>
       </div>
@@ -46,9 +47,18 @@
           <li>
             <a href="/V2/Lauren/design/images.html">Images</a>
           </li>
-          <li>
-            <a href="/V2/Lauren/design/layouts.html">Layouts</a>
+          <li class="current-borderLeft">
+            <a class="current-main" href="/V2/Lauren/design/layouts/">Layouts</a>
           </li>
+            <li style="margin-left: 20px;">
+              <a style="font-size: 14px;" href="/V2/Lauren/design/layouts/common-layouts/">Common layouts</a>
+            </li>
+            <li style="margin-left: 20px;">
+              <a  style="font-size: 14px;" href="/V2/Lauren/design/layouts/spacing/">Spacing</a>
+            </li>
+            <li style="margin-left: 20px;">
+              <a  style="font-size: 14px;" href="/V2/Lauren/design/layouts/responsive-layouts/">Responsive layouts</a>
+            </li>
           <li>
             <a href="/V2/Lauren/design/patterns/">Patterns</a>
           </li>
@@ -64,18 +74,11 @@
     <div class="right-content">
 
       <div class="govuk-grid-column-full">
-        <span class="govuk-caption-xl">Setup</span>
+        <span class="govuk-caption-xl">Design</span>
         <h1 class="govuk-heading-xl">
-        Developing
+        Layouts
         </h1>
-    
-      
-        
-       </div>
-      
-    </div>
-  </div>
-
-</div>
+  
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 {% endblock %}
