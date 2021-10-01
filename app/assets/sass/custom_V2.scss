@@ -298,12 +298,16 @@ li.current-borderLeft{
     padding: 15px;
     background: #DDFEEF;
     border-top: 5px solid #00A459;
+    box-sizing: border-box;
+    min-height: 165px;
   }
   
   .howToDont {
     padding: 15px;
     background: #FFEAE5;
     border-top: 5px solid #EF2825;
+    box-sizing: border-box;
+    min-height: 165px;
   }
   
   .howToTitle {

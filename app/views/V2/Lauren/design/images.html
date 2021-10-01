@@ -1,44 +1,177 @@
-
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2_copy.html" %}
 
 {% block pageTitle %}
-  Getting started
+  Design system
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row govuk-body">
+<div class="contentSection">
 
+
+  <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-      <h1>
-        Images
-      </h1>
-      <p class="page-subtitle">
-        Additional subtitle text goes here
-      </p>
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/V2/design/">Design principles</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Setup</p>
+        <ul>
+          <li>
+            <a href="/V2/Lauren/design/prototyping">Prototyping</a>
+          </li>
+          <li>
+            <a href="/V2/Lauren/design/developing">Developing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/V2/Lauren/design/components/">Components</a>
+          </li>
+                
+          <li>
+            <a href="/V2/Lauren/design/fontstypography/">Fonts & typography</a>
+          </li>
+          <li>
+            <a href="/V2/Lauren/design/icons.html">Icons</a>
+          </li>
+          <li class="current-borderLeft">
+            <a class="current-main" href="/V2/Lauren/design/images.html">Images</a>
+          </li>
+          <li>
+            <a href="/V2/Lauren/design/layouts.html">Layouts</a>
+          </li>
+          <li>
+            <a href="/V2/Lauren/design/patterns.html">Patterns</a>
+          </li>
+          <li>
+            <a href="/V2/Lauren/design/styles.html">Styles</a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
 
-    <div class="govuk-grid-column-full">
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Design</span>
+        <h1 class="govuk-heading-xl">
+        Images
+        </h1>
+
+        <h2 class="govuk-heading-l">Use of images</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+        <h2 class="govuk-heading-l">Photography</h2>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+        <div class="govuk-grid-column-full" style="padding:0px;margin-bottom:35px;">
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage" >
+              </div>
+              <div class="howToDo">
+                  <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
+                  <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
+              </div>
+            </div>  
+          </div>
+
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage">
+
+              </div>
+              <div class="howToDont">
+                <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
+                <p class="howToText">When the dropdown menu has just a few items in it.</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full" style="padding:0px;margin-bottom:55px;">
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage" >
+              </div>
+              <div class="howToDo">
+                  <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
+                  <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
+              </div>
+            </div>  
+          </div>
+
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage">
+
+              </div>
+              <div class="howToDont">
+                <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
+                <p class="howToText">When the dropdown menu has just a few items in it.</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+        
         <h2 class="govuk-heading-l">
-          H2 header title
+          Alternative text
         </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet rutrum sem. Integer a neque ex. Ut sed quam commodo, dapibus metus vitae, tincidunt ipsum. In at leo quam. Aliquam erat volutpat. Maecenas id gravida libero. Morbi hendrerit laoreet auctor. Aenean suscipit turpis vel consequat blandit. Fusce accumsan libero erat, sit amet pulvinar dolor elementum a. Mauris rutrum luctus neque.
-        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+          <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</li>
+          <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</li>
 
-         <p>
-            Aliquam at dolor porta, aliquam tortor vel, viverra arcu. Sed in malesuada erat, eget suscipit sem. Pellentesque id risus faucibus, venenatis urna in, volutpat mauris. Praesent lacinia, odio et accumsan gravida, tortor orci efficitur nisi, eget blandit erat dui sed mi. Ut porttitor lobortis ultricies. 
-         </p>   
+        </ul>
+        <h2 class="govuk-heading-l">
+          Help improve this page
+        </h2>
+        <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a class="govuk-link" href="#">
+              share your research with the design system team
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system/edit/main/src/components/footer/index.md.njk">propose a change</a>
+          </li>
+        </ul>
+    
+      </div>
 
-        <p>
-            Cras nec mauris sit amet dui malesuada fringilla eget in orci. In hac habitasse platea dictumst. Vivamus eget bibendum felis, vitae luctus ipsum. Nulla facilisi. Fusce ut mauris congue, pharetra libero ut, aliquam metus.
-        </p>
+      
+                
 
+      
+      
 
       </div>
+    </div>  
+        
+
+
 
   </div>
 
+</div>
+
 {% endblock %}
-
-
