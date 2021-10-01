@@ -10,6 +10,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
   
 .govuk-heading-l{
     margin-top: 35px;
+    padding-top: 20px;
 }
 
   .govuk-link:link, a:link, a:visited, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
@@ -358,4 +359,9 @@ li code, td code, p code {
     padding: 0 5px;
     color: #d13118;
     background-color: #f3f2f1;
+}
+
+.govuk-table__cell{
+    padding: 15px 0px;
+    vertical-align: middle;
 }
