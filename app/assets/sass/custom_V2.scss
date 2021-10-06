@@ -88,7 +88,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 }
 
 .sideMenu {
-    width: 220px;
+    min-width: 220px;
     padding-right:80px;
     float:left;
 }
@@ -158,7 +158,7 @@ background: #F3F2F1;
     color:#4C6272;
     font-weight: 600;
     font-size: 19px;
-    margin-bottom:5px;
+    margin-bottom:12px;
 }
 
 .sideMenuSection {
@@ -172,8 +172,9 @@ background: #F3F2F1;
 }
 
 .sideMenu ul li {
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
+
 
 .sideMenu ul li a {
     color:#4C6272;
@@ -212,6 +213,11 @@ background: #F3F2F1;
 a.current-main{
     font-weight: 900;
     color: #008548 !important ;
+}
+
+a.current-main2{
+    font-weight: 900;
+    color: #464646 !important ;
 }
 
 li.current-borderLeft{
