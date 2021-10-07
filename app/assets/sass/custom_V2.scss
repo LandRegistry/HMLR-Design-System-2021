@@ -375,3 +375,22 @@ li code, td code, p code {
     padding: 15px 0px;
     vertical-align: middle;
 }
+
+
+.govuk-table__header{
+    border-bottom: none;
+}
+
+.govuk-table__cell{
+    border-bottom: none;
+}
+
+
+.govuk-table__header code{
+    vertical-align: middle; 
+    font-weight: 400;}
+
+.govuk-table__cell code{
+    color: black;
+    background:none;
+}    
