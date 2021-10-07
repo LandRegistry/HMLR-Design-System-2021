@@ -2,7 +2,7 @@
 {% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
-  Getting started
+  Design system
 {% endblock %}
 
 {% block content %}
@@ -52,22 +52,28 @@
           <li>
             <a href="/V2/design/components/">Components</a>
           </li>
-                
           <li>
             <a href="/V2/design/fontstypography/">Fonts & typography</a>
           </li>
           <li>
             <a href="/V2/design/icons.html">Icons</a>
           </li>
-          <li class="current-borderLeft">
-            <a class="current-main" href="/V2/design/images.html">Images</a>
+          <li>
+            <a href="/V2/design/images.html">Images</a>
           </li>
           <li>
             <a href="/V2/design/layouts/">Layouts</a>
           </li>
-          <li>
-            <a href="/V2/design/patterns/">Patterns</a>
+          <li class="current-borderLeft">
+            <a class="current-main" href="/V2/design/patterns/">Patterns</a>
           </li>
+            <li style="margin-left: 20px; margin-bottom: 0px;">
+                <a  class="current-main" style="font-size: 15px;" href="/V2/design/patterns/maps/">Maps</a>
+            </li>
+              
+            <li style="margin-left: 20px; margin-bottom: 12px;">
+                <a  style="font-size: 15px;" href="/V2/design/patterns/document-dashboard/">Document dashboard</a>
+            </li>
           <li>
             <a href="/V2/design/styles/">Styles</a>
           </li>
@@ -80,104 +86,51 @@
     <div class="right-content">
 
       <div class="govuk-grid-column-full">
-        <span class="govuk-caption-xl">Design</span>
+        <span class="govuk-caption-xl">Experimental pattern</span>
         <h1 class="govuk-heading-xl">
-        Images
+        Maps
         </h1>
 
-        <h2 class="govuk-heading-l">Use of images</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        
-        <h2 class="govuk-heading-l">Photography</h2>
-
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-
-        <div class="govuk-grid-column-full" style="padding:0px;margin-bottom:35px;">
-
-          <div class="govuk-grid-column-one-third howToColumn">
-            <div class="howTo">
-              <div class="doDontImage" >
-              </div>
-              <div class="howToDo">
-                  <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
-                  <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
-              </div>
-            </div>  
-          </div>
 
 
-          <div class="govuk-grid-column-one-third howToColumn">
-            <div class="howTo">
-              <div class="doDontImage">
-
-              </div>
-              <div class="howToDont">
-                <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
-                <p class="howToText">When the dropdown menu has just a few items in it.</p>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="govuk-grid-column-full" style="padding:0px;margin-bottom:55px;">
-
-          <div class="govuk-grid-column-one-third howToColumn">
-            <div class="howTo">
-              <div class="doDontImage" >
-              </div>
-              <div class="howToDo">
-                  <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
-                  <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
-              </div>
-            </div>  
-          </div>
-
-
-          <div class="govuk-grid-column-one-third howToColumn">
-            <div class="howTo">
-              <div class="doDontImage">
-
-              </div>
-              <div class="howToDont">
-                <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
-                <p class="howToText">When the dropdown menu has just a few items in it.</p>
-              </div>
-            </div>  
-          </div>
-        </div>
-        
         <h2 class="govuk-heading-l">
-          Alternative text
+            When to use this pattern
         </h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-          <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</li>
-          <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</li>
+        <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+        <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</li>
+        <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</li>
 
         </ul>
         <h2 class="govuk-heading-l">
-          Help improve this page
+            When to not use this pattern
+        </h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <ul class="govuk-list govuk-list--bullet">
+        <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+        <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</li>
+        <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</li>
+
+        </ul>
+
+        <h2 class="govuk-heading-l">
+            Help improve this page
         </h2>
         <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>
+        <li>
             <a class="govuk-link" href="#">
-              share your research with the design system team
+            share your research with the design system team
             </a>
-          </li>
-          <li>
+        </li>
+        <li>
             <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system/edit/main/src/components/footer/index.md.njk">propose a change</a>
-          </li>
+        </li>
         </ul>
-    
+        
       </div>
-      </div>
-    </div>  
-  </div>
-
-</div>
+    </div>
 
 {% endblock %}
-
-

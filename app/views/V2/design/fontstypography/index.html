@@ -1,5 +1,5 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
   Getting started
@@ -7,59 +7,324 @@
 
 {% block content %}
 
+<div class="contentSection">
   <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/Design/">Design system</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
 
+  <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-      <h1>
-        Fonts & Typography
-      </h1>
-      <p class="page-subtitle">
-        Additional subtitle text goes here
-      </p>
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/V2/design/">Design principles</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Setup</p>
+        <ul>
+          <li>
+            <a href="/V2/design/prototyping">Prototyping</a>
+          </li>
+          <li>
+            <a href="/V2/design/developing">Developing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/V2/design/components/">Components</a>
+          </li>
+                
+          <li class="current-borderLeft">
+            <a class="current-main" href="/V2/design/fontstypography/">Fonts & typography</a>
+          </li>
+          <li>
+            <a href="/V2/design/icons.html">Icons</a>
+          </li>
+          <li>
+            <a href="/V2/design/images.html">Images</a>
+          </li>
+          <li>
+            <a href="/V2/design/layouts/">Layouts</a>
+          </li>
+          <li>
+            <a href="/V2/design/patterns/">Patterns</a>
+          </li>
+          <li>
+            <a href="/V2/design/styles/">Styles</a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
 
+    <div class="right-content">
 
-    <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Design</span>
+        <h1 class="govuk-heading-xl">
+        Fonts & typography
+        </h1>
+
+        <h2 class="govuk-heading-l">When to use each font</h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If your service is on the service.gov.uk subdomain you must use the <strong>GDS Transport</strong> font.</li>
+          <li>If your service is publicly available on a subdomain other than service.gov.uk, use the <strong>Roboto</strong> font.</li>
+          <li>The <strong>geometric</strong> font is only to be used within the HMLR logo.</li>
+        </ul>        
+        <h2 class="govuk-heading-l">Headings</h2>
+
+        <p>Write all headings in sentence case.</p>
+        <p>Use heading tags, such as <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> and so on, to tag the headings on a page. Apply a heading class, such as <code>govuk-heading-l</code>, to style them visually. Style headings consistently to create a clear content structure throughout your service.</p>
+      
+        <p>For a <a href="/patterns/question-pages">question page</a>, or pages with long headings, start with <code>govuk-heading-l</code> for an <code>&lt;h1&gt;</code>, <code>govuk-heading-m</code> for an <code>&lt;h2&gt;</code> and so on. But change it if your pages feel unbalanced – the heading class you use does not always need to correspond to the heading level.</p>
+
+        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px; margin-bottom:55px;">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#past-day">
+                Examples
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-week">
+                HTML
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-month">
+                Nunjucks
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-tabs__panel" id="past-day">
+            <h1 class="govuk-heading-l GDSTransport" style="text-transform: lowercase; text-align: left;margin-bottom:0px; margin-top: 0px;">govuk-heading-l</h1>
+            <h1 class="govuk-heading-l" style="text-transform: lowercase; text-align: left; margin-top: 10px;">hmlr-heading-l</h1>
+
+            <h2 class="govuk-heading-m GDSTransport" style="margin-bottom: 10px;">govuk-heading-m</h2>
+            <h2 class="govuk-heading-m" style="margin-bottom: 30px;">hmlr-heading-m</h2>
+
+            <h3 class="govuk-heading-s GDSTransport" style="margin-bottom: 10px;">govuk-heading-s</h3>
+            <h3 class="govuk-heading-s">hmlr-heading-s</h3>
+        
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+            <div tabindex="0" style="
+        max-width: inherit;margin: 0;padding: 25px;border: 3px solid transparent; outline: 1px solid transparent;color: #0b0c0c;background-color: #f3f2f1;font-size: inherit;">
     
+    <p> <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>govuk-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
 
-      <ul id="horizontal-list">
-          <li>
-            <a class="current" href="/design/fontstypography/fontstypography.html">
-              Guidance
-            </a>
-          </li>
-          <!-- <li>
-            <a class="" href="/design/components/experimental/enhanced-dropdown/accessibility.html">
-              Accessibility
-            </a>
-          </li> -->
-          <li>
-            <a class="" href="/design/fontstypography/hmlr_govuk.html">
-              HMLR - GOV.UK
-            </a>
-          </li>
-          <li>
-            <a class="" href="/design/fontstypography/hmlr_non_govuk.html">
-              HMLR - NON GOV.UK
-            </a>
-          </li>
-      </ul>
+    <p> <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-l"</span>&gt;</span>hmlr-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
 
-      <h2 class="govuk-heading-l" style="margin-top: 60px;">
-        H2 header title
-      </h2>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet rutrum sem. Integer a neque ex. Ut sed quam commodo, dapibus metus vitae, tincidunt ipsum. In at leo quam. Aliquam erat volutpat. Maecenas id gravida libero. Morbi hendrerit laoreet auctor. Aenean suscipit turpis vel consequat blandit. Fusce accumsan libero erat, sit amet pulvinar dolor elementum a. Mauris rutrum luctus neque.
-      </p>
+       
+               <p> <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-m"</span>&gt;</span>govuk-heading-m<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></p>
+               <p> <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-m"</span>&gt;</span>hmlr-heading-m<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></p>
 
-       <p>
-          Aliquam at dolor porta, aliquam tortor vel, viverra arcu. Sed in malesuada erat, eget suscipit sem. Pellentesque id risus faucibus, venenatis urna in, volutpat mauris. Praesent lacinia, odio et accumsan gravida, tortor orci efficitur nisi, eget blandit erat dui sed mi. Ut porttitor lobortis ultricies. 
-       </p>   
+        
+               <p><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-s"</span>&gt;</span>govuk-heading-s<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span></p>
+               <p><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-s"</span>&gt;</span>hmlr-heading-s<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span></p>
 
-      <p>
-          Cras nec mauris sit amet dui malesuada fringilla eget in orci. In hac habitasse platea dictumst. Vivamus eget bibendum felis, vitae luctus ipsum. Nulla facilisi. Fusce ut mauris congue, pharetra libero ut, aliquam metus.
-      </p>
-    </div>
+     </div>
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+            <h2 class="govuk-heading-l">Coming soon</h2>
+            
+        
+          </div>
+    
+        </div>
+
+
+        <h2 class="govuk-heading-l">
+          Heading with captions
+        </h2>
+        <p>Sometimes you may need to make it clear that a page is part of a larger section or group. To do this, you can use a heading with a caption above it.</p> 
+
+        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px; margin-bottom:55px;">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#examples">
+                Examples
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#html">
+                HTML
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#nunjucks">
+                Nunjucks
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-tabs__panel" id="examples">
+
+            <h1 class="govuk-heading-l GDSTransport" style="margin-bottom: 10px; margin-top:0px;">
+              <span class="govuk-caption-l">govuk-caption-l</span>
+              govuk-heading-l
+            </h1>
+
+            <h1 class="govuk-heading-l" style="margin-top: 10px;">
+              <span class="govuk-caption-l">hmlr-caption-l</span>
+              hmlr-heading-l
+            </h1>
+
+            <h2 class="govuk-heading-m GDSTransport" style="margin-bottom: 10px; margin-top:0px;">
+              <span class="govuk-caption-m">govuk-caption-m</span>
+              govuk-heading-m
+            </h2>
+
+            <h2 class="govuk-heading-m" style="margin-top: 10px;">
+              <span class="govuk-caption-m">hmlr-caption-m</span>
+              hmlr-heading-m
+            </h2>
+
+
+            
+        
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="html">
+            <div tabindex="0" style="
+        max-width: inherit;margin: 0;padding: 25px;border: 3px solid transparent; outline: 1px solid transparent;color: #0b0c0c;background-color: #f3f2f1;font-size: inherit;">
+    
+    
+    <p><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-caption-l"</span>&gt;</span>govuk-caption-l<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<br><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>govuk-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+
+<p><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-caption-l"</span>&gt;</span>hmlr-caption-l<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <br><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-l"</span>&gt;</span>hmlr-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+  
+  <p><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-caption-m"</span>&gt;</span>govuk-caption-m<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <br><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-m"</span>&gt;</span>govuk-heading-m<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+    
+    <p><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-caption-m"</span>&gt;</span>hmlr-caption-s<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <br><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-s"</span>&gt;</span>hmlr-heading-s<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+      
+
+
+     </div>
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="nunjucks">
+            <h2 class="govuk-heading-l">Coming soon</h2>
+            
+        
+          </div>
+    
+        </div>
+
+
+
+
+                  <h2 class="govuk-heading-l">
+                    Paragraphs
+                  </h2>
+                  <p>The default paragraph font size is 19px on large screens and 16px on small screens.</p>
+
+                  <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px;margin-bottom:55px;">
+                    <h2 class="govuk-tabs__title">
+                      Contents
+                    </h2>
+                    <ul class="govuk-tabs__list">
+                      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#examples2">
+                          Examples
+                        </a>
+                      </li>
+                      <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#html2">
+                          HTML
+                        </a>
+                      </li>
+                      <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#nunjucks2">
+                          Nunjucks
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="govuk-tabs__panel" id="examples2">
+          
+                      <p class="govuk-body GDSTransport">govuk-body</p>
+                      <p class="govuk-body">hmlr-body</p>
+
+          
+          
+                      
+                  
+                    </div>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="html2">
+                      <div tabindex="0" style="
+                  max-width: inherit;margin: 0;padding: 25px;border: 3px solid transparent; outline: 1px solid transparent;color: #0b0c0c;background-color: #f3f2f1;font-size: inherit;">
+                  <p> <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"govuk-heading-l"</span>&gt;</span>govuk-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+
+                  <p> <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hmlr-heading-l"</span>&gt;</span>hmlr-heading-l<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></p>
+              
+ 
+          
+          
+               </div>
+                    </div>
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="nunjucks2">
+                      <h2 class="govuk-heading-l">Coming soon</h2>
+                      
+                  
+                    </div>
+              
+                  </div>
+      
+
+            
+
+      
+                <h2 class="govuk-heading-l">
+                  Help improve this page
+                </h2>
+                <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>
+                    <a class="govuk-link" href="#">
+                      share your research with the design system team
+                    </a>
+                  </li>
+                  <li>
+                    <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system/edit/main/src/components/footer/index.md.njk">propose a change</a>
+                  </li>
+                </ul>
+
+      
+      
+
+      </div>
+    </div>  
+        
+
+
+
+  </div>
 
 </div>
 

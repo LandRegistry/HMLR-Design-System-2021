@@ -1,0 +1,174 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<div class="contentSection">
+
+  <div class="contentSection">
+
+    <div class="govuk-grid-row govuk-body">
+      <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+        <div class="govuk-breadcrumbs">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="/V2/">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="/V2/Design/">Design system</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/V2/design/">Design principles</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Setup</p>
+        <ul>
+          <li>
+            <a href="/V2/design/prototyping">Prototyping</a>
+          </li>
+          <li>
+            <a href="/V2/design/developing">Developing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/V2/design/components/">Components</a>
+          </li>
+          <li>
+            <a href="/V2/design/fontstypography/">Fonts & typography</a>
+          </li>
+          <li>
+            <a href="/V2/design/icons.html">Icons</a>
+          </li>
+          <li>
+            <a href="/V2/design/images.html">Images</a>
+          </li>
+          <li>
+            <a href="/V2/design/layouts/">Layouts</a>
+          </li>
+          <li>
+            <a href="/V2/design/patterns/">Patterns</a>
+          </li>
+          <li class="current-borderLeft">
+            <a class="current-main" href="/V2/design/styles.html">Styles</a>
+          </li>
+          <li style="margin-left: 20px; margin-bottom: 0px;">
+            <a  style="font-size: 15px;" href="/V2/design/styles/brand-guidelines.html">Brand guidelines</a>
+          </li>
+          <li style="margin-left: 20px; margin-bottom: 12px;">
+            <a class="current-main" style="font-size: 15px;" href="/V2/design/styles/colour.html">Colour</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Styles</span>
+        <h1 class="govuk-heading-xl">
+        Colour
+        </h1>
+  
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <table class="govuk-table" style="width:60%; margin-top: 55px;">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #d4351c; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("red")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#d4351c</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #ffdd00; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("yellow")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#ffdd00</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #00703c; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("green")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#00703c</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #1d70b8; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("blue")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#1d70b8</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #003078; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("dark-blue")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#003078</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #5694ca; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("light-blue")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#5694ca</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #4c2c92; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("purple")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#4c2c92</code>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">
+                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #0b0c0c; vertical-align: middle; margin-right: 15px;"></div>
+                <code>HMLR-colour("black")</code>
+              </th>
+              <td class="govuk-table__cell">
+                <code>#0b0c0c</code>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table> 
+
+{% endblock %}
