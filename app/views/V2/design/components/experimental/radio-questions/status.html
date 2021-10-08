@@ -123,25 +123,24 @@ margin-bottom:5px;
             <a class="current-main" href="/V2/design/components/">Components</a>
           </li>
       
-            <li style="margin-left: 20px; margin-bottom: 0px;">
-              <a  class="current-main" style="font-size: 15px;" href="/V2/design/components/experimental/enhanced-dropdown/">Enhanced dropdown</a>
+          <li style="margin-left: 20px; margin-bottom: 0px;">
+            <a style="font-size: 15px;" href="/V2/design/components/experimental/enhanced-dropdown/">Enhanced dropdown</a>
+          </li>
+            <li style="margin-left: 20px; margin-bottom: 12px;">
+              <a style="font-size: 15px;" href="/V2/design/components/experimental/print-summary/">Print summary</a>
             </li>
-
-                  <li style="margin-left: 30px; margin-bottom: 0px;">
-                    <a style="font-size: 14px;" href="/V2/design/components/experimental/enhanced-dropdown/">Overview</a>
-                  </li>
-                  <li style="margin-left: 30px; margin-bottom: 0px;">
-                    <a style="font-size: 14px; color: #008548;" href="/V2/design/components/experimental/enhanced-dropdown/status.html">Status</a>
-                  </li>
-                  <li style="margin-left: 30px; margin-bottom: 12px;">
-                    <a style="font-size: 14px;" href="https://www.notion.so/" target="_blank">Documentation</a>
-                  </li>
-              <li style="margin-left: 20px; margin-bottom: 0px;">
-                <a  style="font-size: 15px;" href="/V2/design/components/experimental/print-summary/">Print summary</a>
-              </li>
-              <li style="margin-left: 20px; margin-bottom: 12px;">
-                <a  style="font-size: 15px;" href="/V2/design/components/experimental/radio-questions/">Radio questions</a>
-              </li>
+            <li style="margin-left: 20px; margin-bottom: 0px;">
+              <a class="current-main" style="font-size: 15px;" href="/V2/design/components/experimental/radio-questions/">Radio questions</a>
+            </li>
+            <li style="margin-left: 30px; margin-bottom: 0px;">
+              <a style="font-size: 14px;" href="/V2/design/components/experimental/radio-questions/">Overview</a>
+            </li>
+            <li style="margin-left: 30px; margin-bottom: 0px;">
+              <a style="font-size: 14px; color: #008548;" href="/V2/design/components/experimental/radio-questions/status.html">Status</a>
+            </li>
+            <li style="margin-left: 30px; margin-bottom: 12px;">
+              <a style="font-size: 14px;" href="https://www.notion.so/" target="_blank">Documentation</a>
+            </li>
               
           <li>
             <a href="/V2/design/fontstypography/">Fonts & typography</a>
@@ -314,10 +313,11 @@ margin-bottom:5px;
 
 </div>
 
-
 {% endblock %}
 
-{% block footer %}
-{% include "includes/backToTop.html" %}
-{% include "includes/componentsList.html" %}
-{% endblock %}
+<style>
+  .govuk-width-container{
+    max-width: 1100px;
+}
+</style>
+
