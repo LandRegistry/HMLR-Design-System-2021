@@ -1,89 +1,126 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
-  Getting started
+  Design system
 {% endblock %}
 
 {% block content %}
 
+<div class="contentSection">
+
   <div class="govuk-grid-row govuk-body">
-
-    <div class="govuk-grid-column-full page-title">
-      <h1>
-        Design
-      </h1>
-      <p class="page-subtitle">
-        Nulla malesuada augue purus, ut faucibus massa auctor vitae.<br> 
-Nunc arcu, sollicitudin vel aliquet eu, vestibulum at diam.
-      </p>
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/Design/">Design system</a>
+          </li>
+        </ol>
+      </div>
     </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Components
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/components/">Visual inventory</a></p>   
-    </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Content design
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/content.html">Find out more</a></p>   
-    </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Fonts & typography
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/fontstypography/">View fonts and typography</a></p>   
-    </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Icons
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/icons.html">View icons</a></p>   
-    </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Images
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/images.html">View images</a></p>   
-    </div>
-
-    <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-l">
-        Layouts
-      </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-       <p><a href="/design/layouts.html">View images</a></p>   
   </div>
 
+  <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Patterns
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/patterns.html">View patterns</a></p>   
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/design/">Design principles</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Setup</p>
+        <ul>
+          <li>
+            <a href="/design/prototyping.html">Prototyping</a>
+          </li>
+          <li>
+            <a href="/design/developing.html">Developing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+          <li>
+            <a href="/design/fontstypography/">Fonts & typography</a>
+          </li>
+          <li>
+            <a href="/design/icons.html">Icons</a>
+          </li>
+          <li>
+            <a href="/design/images.html">Images</a>
+          </li>
+          <li>
+            <a href="/design/layouts.html">Layouts</a>
+          </li>
+          <li>
+            <a href="/design/patterns.html">Patterns</a>
+          </li>
+          <li>
+            <a href="/design/styles.html">Styles</a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
 
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-          Styles
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam leo, mollis eget viverra in, tempus et metus. Sed facilisis est bibendum finibus posuere.</p>
-         <p><a href="/design/styles.html">View styles</a></p>   
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+        Design system
+        </h1>
+        <p style="font-size:24px;margin-bottom:25px;">
+          Build consistent, accessible user interfaces. Learn from the research and experience of other HM Land Registry digital teams.
+        </p>
+
+        <p>
+          Use these design styles, components and patterns to quickly make prototypes or build a live service. The examples in the HM Land Registry experience library come with code to make it easy for you to use them in your project.
+        </p>
+        <div style="display: flex; justify-content: space-between; margin-top: 55px;">
+          <div class="designSystemBoxes">
+            <h3 style="margin-top: 0px;"><a href="#">Prototyping</a></h3>
+            <p style="margin-bottom: 0px;">Lorem Ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+          </div>
+          <div class="designSystemBoxes">
+            <h3 style="margin-top: 0px;"><a href="#">Developing</a></h3>
+            <p style="margin-bottom: 0px;">Lorem Ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+          </div>
+        </div>
+        <h2 class="govuk-heading-l" style="padding-top: 20px;">Feedback</h2>
+        <p>
+          Let us know about your visit to the service manual today by filling in <a href="#">our survey on the Qualtric website</a>
+        </p>
+        <h2 class="govuk-heading-l" style="padding-top: 20px;">Support</h2>
+        <p>
+          The manual is maintained by the <a href="#">service manual team at HM Land Registry</a>. If you've got a problem or want to feedback, you <a href="#">can get in touch</a>.
+        </p>
+      </div>
+
+      
+
     </div>
+    </div>
+
+
+
+
 
   </div>
+
+</div>
 
 {% endblock %}
 

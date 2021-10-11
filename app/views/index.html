@@ -1,5 +1,5 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 {% block pageTitle %}
   HMLR Design System 2021
@@ -7,49 +7,87 @@
 
 {% block content %}
 
+<div class="heroSection">
+    <div class="contentSection">
+        <h1>
+          Design and build digital services for HM Land Registry
+        </h1>
+        <p>Use the service manual to build consistent, usable services that put people first.​ Learn from the research and experience of other HM Land Registry teams.</p>
+  </div>
+</div>
 
-  <div class="govuk-grid-row govuk-body hexBackground">
+<div class="contentSection">
 
-    <div class="govuk-grid-column-full page-title">
-      <h1>
-        Design System
-      </h1>
-      <p class="page-subtitle">
-        Design and build digital services for HM Land Registry
-      </p>
-    </div>
+  <div class="govuk-grid-row govuk-body">
+
+
+    <div class="govuk-grid-column-full">
+
+      <div class="contentButtonBox">
+        <a href="/gettingstarted/">
+          <p class="link">Getting started</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+      <div class="contentButtonBox">
+        <a href="/design/">
+          <p class="link">Design system</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+      <div class="contentButtonBox">
+        <a href="/content/">
+          <p class="link">Content style guide</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+      <div class="contentButtonBox">
+        <a href="/guidance/">
+          <p class="link">Guidance</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+      <div class="contentButtonBox">
+        <a href="/accessibility/">
+          <p class="link">Accessibility</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+      <div class="contentButtonBox">
+        <a href="/community/">
+          <p class="link">Community</p>
+          <p class="description">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
+        </a>
+      </div>
+
+  </div>
 
     <div class="govuk-grid-column-full">
         <h2 class="govuk-heading-l">
-        Design principles
-        </h2>
-        <ol class="list">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt eu nisi, egestas ut et sed sed eget porta. Felis cursus a scelerisque faucibus aliquam.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh cursus nulla lacus lacinia amet varius. Elementum venenatis venenatis egestas sodales fringilla eu.</li>
-            <li>Lorem ipsum dolor, consectetur adipiscing elit. Ut a, mi felis facilisi consequat. Lacus,diam montes, parturient. Faucibus ultrices quis mauris lectus ultrices.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, nunc, orci sit turpis tempor. Justo, venenatis porttitor nunc, mauris morbi.</li>
-        </ol>
-    </div>
-
-    <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">
-        Getting started
+        Feedback
         </h2>
         <p>
-            Whether you’re brand new to HM Land Registry or would just like some guidance, check out the <a href="/gettingstarted/">getting started</a> section of the design system for help.
+          Let us know about your visit to the service manual today by filling in <a href="/community/">our survey on the Qualtrics website</a>.
         </p>
     </div>
 
     <div class="govuk-grid-column-full">
         <h2 class="govuk-heading-l">
-        Join the community
+        Support
         </h2>
         <p>
-          Our Design and Content community is an active and safe space for us to support each other. Join our discussions on <a href="/community/">Slack</a> and make sure you come along to our weekly meetups.
+          The manual is maintained by the Experience Library team at HM Land Registry. If you've got a question or want to feedback, you can <a href="/community/">get in touch</a>.
         </p>
     </div>
 
   </div>
+
+</div>
 
 {% endblock %}
 

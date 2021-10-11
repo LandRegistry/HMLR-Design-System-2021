@@ -1,0 +1,218 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Getting started
+{% endblock %}
+
+{% block content %}
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/Design/">Design system</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/design/">Design principles</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Setup</p>
+        <ul>
+          <li>
+            <a href="/design/prototyping">Prototyping</a>
+          </li>
+          <li>
+            <a href="/design/developing">Developing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+                
+          <li>
+            <a href="/design/fontstypography/">Fonts & typography</a>
+          </li>
+          <li class="current-borderLeft">
+            <a class="current-main" href="/design/icons.html">Icons</a>
+          </li>
+          <li>
+            <a href="/design/images.html">Images</a>
+          </li>
+          <li>
+            <a href="/design/layouts/">Layouts</a>
+          </li>
+          <li>
+            <a href="/design/patterns/">Patterns</a>
+          </li>
+          <li>
+            <a href="/design/styles/">Styles</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Design</span>
+        <h1 class="govuk-heading-xl">
+        Icons
+        </h1>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header icons_header" style="width: 20%;">Icon</th>
+              <th scope="col" class="govuk-table__header icons_header" style="width: 20%;">Label</th>
+              <th scope="col" class="govuk-table__header icons_header" style="width: 30%;">Downloadable version</th>
+              <th scope="col" class="govuk-table__header icons_header" style="width: 30%;">Used in</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-search.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Search</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">search.svg</a></td>
+              <td class="govuk-table__cell icons_cell"><a href="#">Header</a></td>
+
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-chevron-left.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Chevron left</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">chevron-left.svg</a></td>
+              <td class="govuk-table__cell icons_cell"><a href="#">Breadcrumbs</a> (on mobile screens)</td>            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-chevron-right.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Chevron right</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">chevron-right.svg</a></td>
+              <td class="govuk-table__cell icons_cell">Mobile menu</td>            
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-close.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Close</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">close.svg</a></td>
+              <td class="govuk-table__cell icons_cell">Mobile menu</td>            
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-cross.svg" style="fill:#d5281b;" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Cross (don't)</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">cross-dont.svg</a></td>
+              <td class="govuk-table__cell icons_cell"><a href="#">Do and donts lists</a></td>            
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-tick.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Tick (do)</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">tick-do.svg</a></td>
+              <td class="govuk-table__cell icons_cell"><a href="#">Action link</a></td>            
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-arrow-right.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Arrow right</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">arrow-right</a></td>
+              <td class="govuk-table__cell icons_cell">Next page (<a href="#">pagination</a>)</td>            
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell icons_cell"><img src="https://raw.githubusercontent.com/nhsuk/nhsuk-frontend/094117fe287cbb071f640731db6a699370753cc6/packages/assets/icons/icon-arrow-left.svg" alt=""></td>
+              <td class="govuk-table__cell icons_cell">Arrow left</td>
+              <td class="govuk-table__cell icons_cell"><a href="#">arrow-left</a></td>
+              <td class="govuk-table__cell icons_cell">Previous page (<a href="#">pagination</a>)</td>            
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="govuk-heading-l">When to use these icons</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        
+        <h2 class="govuk-heading-l">How to use these icons</h2>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+        <div class="govuk-grid-column-full" style="padding:0px;margin-bottom:55px;">
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage" >
+              </div>
+              <div class="howToDo">
+                  <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
+                  <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
+              </div>
+            </div>  
+          </div>
+
+
+          <div class="govuk-grid-column-one-third howToColumn">
+            <div class="howTo">
+              <div class="doDontImage">
+
+              </div>
+              <div class="howToDont">
+                <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
+                <p class="howToText">When the dropdown menu has just a few items in it.</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+        
+        <h2 class="govuk-heading-l">
+          Help improve this page
+        </h2>
+        <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a class="govuk-link" href="#">
+              share your research with the design system team
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system/edit/main/src/components/footer/index.md.njk">propose a change</a>
+          </li>
+        </ul>
+    
+      </div>
+
+      
+                
+
+      
+      
+
+      </div>
+    </div>  
+        
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
