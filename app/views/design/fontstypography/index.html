@@ -33,7 +33,7 @@
         <p class="sideMenuTitle">Principles</p>
         <ul>
           <li>
-            <a href="/design/">Design principles</a>
+            <a href="/design/principles/">Design principles</a>
           </li>
         </ul>
       </div>
@@ -86,13 +86,16 @@
         <h1 class="govuk-heading-xl">
         Fonts & typography
         </h1>
-
+      </div>
+      <div class="govuk-grid-column-full">  
         <h2 class="govuk-heading-l">When to use each font</h2>
         <ul class="govuk-list govuk-list--bullet">
           <li>If your service is on the service.gov.uk subdomain you must use the <strong>GDS Transport</strong> font.</li>
           <li>If your service is publicly available on a subdomain other than service.gov.uk, use the <strong>Roboto</strong> font.</li>
           <li>The <strong>geometric</strong> font is only to be used within the HMLR logo.</li>
-        </ul>        
+        </ul> 
+        </div>
+        <div class="govuk-grid-column-full">       
         <h2 class="govuk-heading-l">Headings</h2>
 
         <p>Write all headings in sentence case.</p>
@@ -100,7 +103,7 @@
       
         <p>For a <a href="/patterns/question-pages">question page</a>, or pages with long headings, start with <code>govuk-heading-l</code> for an <code>&lt;h1&gt;</code>, <code>govuk-heading-m</code> for an <code>&lt;h2&gt;</code> and so on. But change it if your pages feel unbalanced – the heading class you use does not always need to correspond to the heading level.</p>
 
-        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px; margin-bottom:55px;">
+        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 50px;">
           <h2 class="govuk-tabs__title">
             Contents
           </h2>
@@ -158,13 +161,14 @@
     
         </div>
 
-
+</div>
+<div class="govuk-grid-column-full">
         <h2 class="govuk-heading-l">
           Heading with captions
         </h2>
         <p>Sometimes you may need to make it clear that a page is part of a larger section or group. To do this, you can use a heading with a caption above it.</p> 
 
-        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 30px; margin-bottom:55px;">
+        <div class="govuk-tabs" data-module="govuk-tabs" style="margin-top: 50px;">
           <h2 class="govuk-tabs__title">
             Contents
           </h2>
@@ -241,7 +245,8 @@
         </div>
 
 
-
+</div>
+<div class="govuk-grid-column-full">
 
                   <h2 class="govuk-heading-l">
                     Paragraphs
@@ -298,26 +303,11 @@
                     </div>
               
                   </div>
-      
+                </div>
 
+
+              {% include "includes/helpimprove.html" %} 
             
-
-      
-                <h2 class="govuk-heading-l">
-                  Help improve this page
-                </h2>
-                <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
-                <ul class="govuk-list govuk-list--bullet">
-                  <li>
-                    <a class="govuk-link" href="#">
-                      share your research with the design system team
-                    </a>
-                  </li>
-                  <li>
-                    <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system/edit/main/src/components/footer/index.md.njk">propose a change</a>
-                  </li>
-                </ul>
-
       
       
 
