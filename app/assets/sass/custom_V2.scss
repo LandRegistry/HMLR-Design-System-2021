@@ -7,10 +7,13 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     font-family: "GDS Transport", arial, sans-serif !important;
    }
 
-  
 .govuk-heading-l{
-
+  margin-bottom: 20px;
   
+}
+
+.govuk-heading-xl {
+  margin-bottom: 30px;
 }
 
   .govuk-link:link, a:link, a:visited, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
@@ -75,7 +78,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 .govuk-grid-column-full {
     width: 100%;
     float: left;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 .contentSection {
@@ -133,6 +136,7 @@ float: left;
     margin-right: 2%;
     margin-bottom: 2%;
     text-decoration: none;
+    border-bottom-width: 4px;
  }
 
  .contentButtonBox a:hover {
