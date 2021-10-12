@@ -520,3 +520,81 @@ pre {
   margin-bottom: 15px;
   text-decoration:none;
 }
+
+
+  /* This focuses on the getting started section */
+  
+  @media (min-width: 40.0625em) {
+    .app-step-nav--large {
+      .app-step-nav__circle--number {
+        border: solid 1px #979797;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+      }
+  
+      .app-step-nav__step {
+        &:after {
+          left: 0;
+          margin-left: 16px;
+          border-width: 1px;
+          top: 30px;
+        }
+  
+        &:last-child:before {
+          margin-left: 8.75px;
+          width: 17.5px;
+          border-width: 1px;
+        }
+      }
+    }
+  }
+  
+  span.app-step-nav__circle--number {
+    border: solid 1px #979797;
+  }
+  
+  .app-step-nav__header {
+    border-top: solid 1px #979797;
+  }
+  
+  .app-step-nav__step {
+    &:last-child:before {
+      border-bottom: solid 1px #979797;
+    }
+  
+    &:after {
+      border-left: solid 1px #979797;
+    }
+  }
+
+  .app-step-nav__circle-inner {
+    padding-top: 2px;
+}
+  
+  .app-step-nav__button--controls {
+    padding: 0.5em 0 2em 0;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+    }
+  }
+  
+  .app-step-nav__toggle-link, .js-toggle-link{
+    padding: 0.5em 0 0 0;
+  }
+
+  .app-step-nav__button--title, .app-step-nav__panel, .js-panel, .js-hidden, .app-step-nav__link, .js-link, .app-step-nav__toggle-link, .js-toggle-link,
+  .app-step-nav__button, .app-step-nav__button--controls, .js-step-controls-button {
+      color: #008548;
+  }
+
+  .app-step-nav__step, .js-step, .step-is-shown{
+      &:hover{
+          color: #008548;
+      }
+  }
