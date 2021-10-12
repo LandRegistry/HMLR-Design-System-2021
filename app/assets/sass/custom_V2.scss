@@ -513,3 +513,14 @@ pre {
     min-height: 176px;
 
   }
+
+  .js-enabled .govuk-accordion__open-all {
+    color: #008548;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-decoration:none;
+}
+
+.js-enabled .govuk-accordion__icon:after, .js-enabled .govuk-accordion__icon:before {
+  background-color: #008548;
+}
