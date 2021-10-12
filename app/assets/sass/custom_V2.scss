@@ -593,8 +593,6 @@ pre {
       color: #008548;
   }
 
-  .app-step-nav__step, .js-step, .step-is-shown{
-      &:hover{
-          color: #008548;
-      }
-  }
+  .app-step-nav__header:hover .app-step-nav__button:not(:focus), .app-step-nav__header:hover .app-step-nav__circle {
+    color: #008548;
+}
