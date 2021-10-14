@@ -588,11 +588,40 @@ pre {
     padding: 0.5em 0 0 0;
   }
 
-  .app-step-nav__button--title, .app-step-nav__panel, .js-panel, .js-hidden, .app-step-nav__link, .js-link, .app-step-nav__toggle-link, .js-toggle-link,
+  .app-step-nav__button--title, .js-hidden, .app-step-nav__link, .js-link, .app-step-nav__toggle-link, .js-toggle-link,
   .app-step-nav__button, .app-step-nav__button--controls, .js-step-controls-button {
       color: #008548;
   }
 
   .app-step-nav__header:hover .app-step-nav__button:not(:focus), .app-step-nav__header:hover .app-step-nav__circle {
     color: #008548;
+}
+
+
+.standardBulletpoints {
+  list-style-type: disc;
+  padding-bottom:40px;
+}
+
+.standardBulletpoints li {
+  margin-bottom:15px;
+}
+
+.subBulletpoints {
+  list-style-type: disc;
+  padding-top: 10px;
+}
+
+.subBulletpoints li {
+  margin-bottom:5px;
+}
+
+.noBulletpoints {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-inline-start: 0px;
+}
+
+.noBulletpoints li {
+  margin-bottom:5px;
 }
