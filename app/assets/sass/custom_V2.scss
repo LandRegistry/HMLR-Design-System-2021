@@ -685,3 +685,17 @@ pre {
     background-image: url("/public/images/componentGIF/enhanceddropdown.gif");
 }
 }
+
+.visualInventoryPrintsummary {
+  background-image: url("/public/images/componentGIF/printsummary.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/printsummary.gif");
+}
+}
+
+.visualInventoryNestedradioquestions {
+  background-image: url("/public/images/componentGIF/nestedradioquestions.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/nestedradioquestions.gif");
+}
+}
