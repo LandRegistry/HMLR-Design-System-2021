@@ -276,10 +276,9 @@ li.current-borderLeft{
 
   .temporaryBox {
     background: #F5F4F5;
-    width: 250px;
-    height: 250px;
+    height: 236px;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -624,4 +623,11 @@ pre {
 
 .noBulletpoints li {
   margin-bottom:5px;
+}
+
+.visualInventoryImage {
+  margin-bottom: 15px; 
+  height: 234px;
+  overflow-y: hidden;
+  border:1px solid #dedede;
 }
