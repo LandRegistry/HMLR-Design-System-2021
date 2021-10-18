@@ -92,6 +92,8 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 
 .sideMenu {
     min-width: 220px;
+    max-width: 300px;
+    box-sizing: border-box;
     padding-right:80px;
     float:left;
 }
