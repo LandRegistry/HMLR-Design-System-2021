@@ -634,6 +634,7 @@ pre {
   overflow-y: hidden;
   border:1px solid #dedede;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .visualInventoryAccordion {
@@ -675,5 +676,12 @@ pre {
   background-image: url("/public/images/componentGIF/checkboxes.jpg");
   &:hover{
     background-image: url("/public/images/componentGIF/checkboxes.gif");
+}
+}
+
+.visualInventoryEnhanceddropdown {
+  background-image: url("/public/images/componentGIF/enhanceddropdown.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/enhanceddropdown.gif");
 }
 }
