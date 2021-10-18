@@ -633,4 +633,47 @@ pre {
   height: 234px;
   overflow-y: hidden;
   border:1px solid #dedede;
+  background-size: contain;
+}
+
+.visualInventoryAccordion {
+  background-image: url("/public/images/componentGIF/accordion.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/accordion.gif");
+}
+}
+
+.visualInventoryBack {
+  background-image: url("/public/images/componentGIF/back.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/back.gif");
+}
+}
+
+.visualInventoryBreadcrumbs {
+  background-image: url("/public/images/componentGIF/breadcrumbs.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/breadcrumbs.gif");
+}
+}
+
+.visualInventoryButton {
+  background-image: url("/public/images/componentGIF/button.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/button.gif");
+}
+}
+
+.visualInventoryCharactercount {
+  background-image: url("/public/images/componentGIF/charactercount.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/charactercount.gif");
+}
+}
+
+.visualInventoryCheckboxes {
+  background-image: url("/public/images/componentGIF/checkboxes.jpg");
+  &:hover{
+    background-image: url("/public/images/componentGIF/checkboxes.gif");
+}
 }
