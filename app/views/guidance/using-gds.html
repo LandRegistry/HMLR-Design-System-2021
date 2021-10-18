@@ -1,0 +1,167 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-accordion__section-button {
+    color: #008548 !Important;
+}
+</style>
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full" style="margin-bottom:25px;">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/V2/guidance/">Guidance</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">HMLR Design System</p>
+        <ul>
+          <li class="current-borderLeft">
+            <a class="current-main" href="using-gds.html">Using GDS</a>
+          </li>
+          <li>
+            <a href="new-components.html">New components</a>
+          </li>
+          <li>
+            <a href="using-notion.html">Using Notion</a>
+          </li>
+          <li>
+            <a href="maintenance.html">Maintenance</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">HMLR Digital Design</p>
+        <ul>
+          <li>
+            <a href="job-roles.html">Job roles</a>
+          </li>
+          <li>
+            <a href="softwares.html">Softwares</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">HMLR Design System</span>
+        <h1 class="govuk-heading-xl">
+        Using GDS
+        </h1>
+        <p style="font-size:24px;margin-bottom:25px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna feugiat non pellentesque ultricies. Mollis magna facilisis diam id in diam.
+        </p>
+
+        <h2 class="govuk-heading-l" style="margin-top: 50px;margin-bottom: -25px;">
+          Using the GOV.UK Design System
+         </h2>
+         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default2">
+   
+           <div class="govuk-accordion__section ">
+             <div class="govuk-accordion__section-header">
+               <h2 class="govuk-accordion__section-heading">
+                 <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                  Why can the GDS Transport font not be used across all HMLR services?
+                </span>
+               </h2>
+             </div>
+             <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+               <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+             </div>
+           </div>
+           <div class="govuk-accordion__section ">
+             <div class="govuk-accordion__section-header">
+               <h2 class="govuk-accordion__section-heading">
+                 <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Can I use GDS components if the HMLR service is not being hosted on the service.gov.uk subdomain?
+                </span>
+               </h2>
+             </div>
+             <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+               <p class='govuk-body'>This is the content for Know your audience.</p>
+             </div>
+           </div>
+           <div class="govuk-accordion__section ">
+             <div class="govuk-accordion__section-header">
+               <h2 class="govuk-accordion__section-heading">
+                 <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                  Are adaptations allowed to be made to approved GDS components?
+                </span>
+               </h2>
+             </div>
+             <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+               <p class='govuk-body'>This is the content for How people read.</p>
+             </div>
+           </div>
+           <div class="govuk-accordion__section ">
+             <div class="govuk-accordion__section-header">
+               <h2 class="govuk-accordion__section-heading">
+                 <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                  How can I edit a GDS component using the prototype kit?
+                </span>
+               </h2>
+             </div>
+             <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+               <p class='govuk-body'>This is the content for How people read.</p>
+             </div>
+           </div>
+           <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                  Should HMLR services adhere to the same standards of accessibility as those outlined by GDS? 
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+              <p class='govuk-body'>This is the content for How people read.</p>
+            </div>
+          </div>
+   
+         </div>
+         
+
+         
+         
+
+    </div>
+  </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
