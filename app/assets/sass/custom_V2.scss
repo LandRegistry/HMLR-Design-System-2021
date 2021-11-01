@@ -78,13 +78,17 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 .govuk-grid-column-full {
     width: 100%;
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contentSection {
     max-width: 1100px;
-    margin:auto;
+    margin:50px auto;
 }
+
+
+
+
 
 .govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
     padding-top: 0px;
@@ -95,6 +99,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
     box-sizing: border-box;
     float:left;
 }
+
 
 .right-content {
 width: calc(100% - 300px);
@@ -183,6 +188,32 @@ float: left;
     margin-bottom:6px;
 }
 
+.active-side-menu {
+  margin: 0px 0px 6px -20px!important;
+  padding-left: 16px;
+  border-left: 4px solid #008548;
+}
+
+.active-side-menu-expanded {
+  margin: 15px 0px 15px -20px!important;
+  padding-left: 16px;
+  border-left: 4px solid #008548;
+}
+
+.sub-side-menu {
+  margin-left: 20px;
+  }
+
+  .sub-sub-side-menu {
+    margin-left: 20px;
+    margin-bottom:0px!important;
+    }
+  
+  .active-sub-side-menu {
+  margin: 15px 0px 15px 0px!important;
+  padding-left: 16px;
+  border-left: 4px solid #008548;
+  }
 
 .sideMenu ul li a {
     color:#4C6272;
@@ -249,14 +280,6 @@ li.current-borderLeft{
       background-color: #ffffff;
       color: #008548;
   
-      &:focus {
-        outline: unset;
-        color: unset;
-        background-color: #ffdd00;
-        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-        border: 2px solid #ffdd00;
-      }
-
       &:hover {
         background-color: #008548;
         color: #ffffff;
@@ -271,13 +294,6 @@ li.current-borderLeft{
         opacity: 0.7;
       }
   
-      &:focus {
-        outline: unset;
-        color: unset;
-        background-color: #ffdd00;
-        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-        border: 2px solid #ffdd00;
-      }
     }
   }
 
@@ -702,4 +718,8 @@ pre {
   &:hover{
     background-image: url("/public/images/componentGIF/nestedradioquestions.gif");
 }
+}
+
+a:focus {
+  color: #0b0c0c;
 }
