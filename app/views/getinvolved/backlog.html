@@ -1,0 +1,102 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-table__header, .govuk-table__cell {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #b1b4b6;
+    text-align: left;
+    vertical-align: top;
+}
+</style>
+
+<div class="contentSection">
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+      <div class="sideMenu">
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Get involved</p>
+          <ul>
+            <li>
+              <a href="index.html">Steering group</a>
+            </li>
+            <li class="active-side-menu">
+              <a class="current-main" href="backlog.html">Backlog</a>
+            </li>
+            <li>
+              <a href="newideas.html">Suggest new ideas</a>
+            </li>
+            <li>
+              <a href="contribution.html">Contribution criteria</a>
+            </li>
+            <li>
+              <a href="notion.html">Notion</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="right-content">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Get involved</span>
+        <h1 class="govuk-heading-xl">
+        Backlog
+        </h1>
+        
+        <p>The Experience library has an open backlog on <a href="">GitHub</a>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
+
+        <p>To contribute, you can create and comment on an <a href="">issue in GitHub</a>.You don’t need to upload anything to Git to contribute.</p>
+          
+        <p>The best place to discuss patterns and components is on Slack. But you can also <a href="">email the working group</a> or talk to us in person.</p>
+          
+        <p>Here is a list of the components, patterns and updates currently on the HM Land Registry Experience library GitHub backlog:</p>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Experience library backlog</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Name</th>
+              <th scope="col" class="govuk-table__header">Section</th>
+              <th scope="col" class="govuk-table__header">Status</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="">Filtering</a></td>
+              <td class="govuk-table__cell">Patterns</td>
+              <td class="govuk-table__cell">In progress</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="">Icon kit</a></td>
+              <td class="govuk-table__cell">Icons</td>
+              <td class="govuk-table__cell">In progress</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="">Tags</a></td>
+              <td class="govuk-table__cell">Colours</td>
+              <td class="govuk-table__cell">In progress</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="">Maps</a></td>
+              <td class="govuk-table__cell">Patterns/Colours</td>
+              <td class="govuk-table__cell">In progress</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+

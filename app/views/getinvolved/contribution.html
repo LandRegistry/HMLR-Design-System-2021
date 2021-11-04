@@ -1,0 +1,153 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-table__header, .govuk-table__cell {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #b1b4b6;
+    text-align: left;
+    vertical-align: top;
+}
+</style>
+
+<div class="contentSection">
+
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+      <div class="sideMenu">
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Get involved</p>
+          <ul>
+            <li>
+              <a href="index.html">Steering group</a>
+            </li>
+            <li>
+              <a href="backlog.html">Backlog</a>
+            </li>
+            <li>
+              <a href="newideas.html">Suggest new ideas</a>
+            </li>
+            <li class="active-side-menu">
+              <a class="current-main" href="contribution.html">Contribution criteria</a>
+            </li>
+            <li>
+              <a href="notion.html">Notion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-content">
+
+        <div class="govuk-grid-column-full">
+            <span class="govuk-caption-xl">Get involved</span>
+            <h1 class="govuk-heading-xl">
+            Contribution criteria
+            </h1>
+            
+            <p>HM Land Registry follows the GOV.UK Design System contribution criteria. The only difference is that contributions will be reviewed by HM Land Registry’s Experience library steering group.</p>
+
+            <p>The contents of the Experience library must be of a high quality and meet user needs. To guarantee this, all components and patterns need to meet certain criteria.</p>
+            
+        </div>
+
+        <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-l">
+            New proposals
+          </h2>
+          <p>To be successful, proposals need to show that the component or pattern being suggested would be useful and unique.</p>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="width:150px;">Criteria</th>
+                <th scope="col" class="govuk-table__header">Description</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Useful</th>
+                <td class="govuk-table__cell"><p>There is evidence that this component or pattern would be useful for many teams or services working on internal facing systems.</p>
+
+                  <p>Evidence could be screenshots or links to versions of it being used in different services.</p></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Unique</th>
+                <td class="govuk-table__cell"><p>It does not replicate something already in the Design System.</p>
+
+                  <p>If it’s intended to replace an existing component or pattern, there is evidence to show that it’s better than the existing version.</p></td>
+              </tr>
+
+  
+            </tbody>
+          </table>
+
+          <p>The Steering group reviews proposals in the community backlog to check they meet these criteria. Proposals that meet the criteria will then be marked ‘to do’, ready to be worked on.</p>
+
+        </div>
+
+        <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-l">
+            Before a component or pattern is published
+          </h2>
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="width:150px;">Criteria</th>
+                <th scope="col" class="govuk-table__header">Description</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Usable</th>
+                <td class="govuk-table__cell"><p>It has been tested in user research and shown to work with a representative sample of users, including those with disabilities.
+                </p>
+
+                  <p>Components and patterns which are not proven usable can be published as experimental. But they must be clearly based on relevant user research from other organisations and best practice, and meet the other criteria.</p></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Consistent</th>
+                <td class="govuk-table__cell"><p>It reuses existing styles and components in the Design System where relevant.</p>
+
+                  <p>Both the guidance and any content included in examples must follow the <a href="">GOV.UK content style guide</a>.</p></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Versatile</th>
+                <td class="govuk-table__cell"><p>The implementation is versatile enough that the component or pattern can be used in a range of different services that may need it.</p>
+
+                  <p>For example, a versatile date input component could be set up to ask for a year only, a month and year only, a precise date, or any other combination you may need.</p>
+                  <p>The component or pattern must also have been tested and shown to work with a range of <a href="">browsers, assistive technologies and devices</a>.</p>
+                  </td>
+              </tr>
+  
+            </tbody>
+          </table>
+
+    
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+{% endblock %}
+
+

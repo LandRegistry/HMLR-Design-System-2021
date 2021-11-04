@@ -1,0 +1,86 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-heading-l {
+    margin-bottom: 5px;
+}
+</style>
+
+<div class="contentSection">
+
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+      <div class="sideMenu">
+        <div class="sideMenuSection">
+          <p class="sideMenuTitle">Get involved</p>
+          <ul>
+            <li>
+              <a href="index.html">Steering group</a>
+            </li>
+            <li>
+              <a href="backlog.html">Backlog</a>
+            </li>
+            <li class="active-side-menu">
+              <a class="current-main" href="newideas.html">Suggest new ideas</a>
+            </li>
+            <li>
+              <a href="contribution.html">Contribution criteria</a>
+            </li>
+            <li>
+              <a href="notion.html">Notion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Get involved</span>
+        <h1 class="govuk-heading-xl">
+          Suggest new ideas
+        </h1>
+        
+        <p>Anyone working at HM Land Registry can suggest adding a new component or pattern to the Experience library.</p>
+        
+    </div>
+
+    <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l">
+        1. Check the backlog
+      </h2>
+      <p>Check if the pattern or component is already on the backlog. If it is, feel free to comment and post screenshots of your example. Tell the working group if you want to contribute to it.</p>
+    </div>
+
+    <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l">
+        2. Share the work
+      </h2>
+      <p>Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community.</p>
+    </div>
+
+    <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l">
+        3. Raise a new issue
+      </h2>
+      <p>If your idea is not on the backlog, <a href="#">raise an issue in Github</a>. You can use our <a href="#">Github guide</a> to help you do this, or <a href="#">get in touch</a> with the working group.</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+
