@@ -7,6 +7,12 @@
 
 {% block content %}
 
+<style>
+  .govuk-table__header, .govuk-table__cell {
+    vertical-align: middle;
+}
+</style>
+
 <div class="contentSection">
 
   <div class="govuk-grid-row govuk-body">
@@ -78,84 +84,107 @@
         Colour
         </h1>
   
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <table class="govuk-table" style="width:60%; margin-top: 55px;">
+        <p>Depending on whether you are designing for a GOV UK or HMLR service, you will need to use a different colour palette.</p>
+
+
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" style="width:150px;"></th>
+              <th scope="col" class="govuk-table__header">Gov UK</th>
+              <th scope="col" class="govuk-table__header">HM Land Registry</th>
+            </tr>
+          </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #d4351c; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("red")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#d4351c</code>
-              </td>
+              <th scope="row" class="govuk-table__header">Text primary</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#0b0c0c<br> $govuk-text-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#0b0c0c</div></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #ffdd00; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("yellow")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#ffdd00</code>
-              </td>
+
+            <tr class="govuk-table__row" style="border-bottom: 50px solid #ffffff;">
+              <th scope="row" class="govuk-table__header">Text secondary</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #505a5f; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#505a5f<br> $govuk-secondary-text-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #505a5f; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#505a5f</div></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #00703c; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("green")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#00703c</code>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #1d70b8; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("blue")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#1d70b8</code>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #003078; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("dark-blue")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#003078</code>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #5694ca; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("light-blue")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#5694ca</code>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #4c2c92; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("purple")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#4c2c92</code>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header">
-                <div style="display:inline-block;width: 40px; height:40px; border-radius: 100%;background-color: #0b0c0c; vertical-align: middle; margin-right: 15px;"></div>
-                <code>HMLR-colour("black")</code>
-              </th>
-              <td class="govuk-table__cell">
-                <code>#0b0c0c</code>
-              </td>
-            </tr>
-            
           </tbody>
-        </table> 
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Links</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#1d70b8; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">	#1d70b8<br> $govuk-link-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #008548; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#008548</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Links hover</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#003078; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#003078<br> $govuk-link-hover-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: #00703c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#00703c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Links visited</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#4c2c92; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#4c2c92<br> $govuk-link-visited-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#4c2c92; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#4c2c92</div></td>
+            </tr>
+
+            <tr class="govuk-table__row" style="border-bottom: 50px solid #ffffff;">
+              <th scope="row" class="govuk-table__header">Links active</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#0b0c0c<br> $govuk-link-active-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#0b0c0c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Border</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#b1b4b6; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#b1b4b6<br> $govuk-border-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#b1b4b6; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#b1b4b6</div></td>
+            </tr>
+
+            <tr class="govuk-table__row" style="border-bottom: 50px solid #ffffff;">
+              <th scope="row" class="govuk-table__header">Border input</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#0b0c0c<br> $govuk-input-border-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#0b0c0c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Focus</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#ffdd00; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#ffdd00<br> $govuk-focus-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#ffdd00; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#ffdd00</div></td>
+            </tr>
+
+            <tr class="govuk-table__row" style="border-bottom: 50px solid #ffffff;">
+              <th scope="row" class="govuk-table__header">Focus text</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#0b0c0c<br> $govuk-focus-text-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#0b0c0c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#0b0c0c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Error state</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#d4351c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#d4351c<br> $govuk-error-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#d4351c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#d4351c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row" style="border-bottom: 50px solid #ffffff;">
+              <th scope="row" class="govuk-table__header">Success state</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#00703c; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#00703c<br> $govuk-success-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#00703c; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#00703c</div></td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Brand colour</th>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 		#1d70b8; margin-right:10px;margin-top:5px;"></div> <div style="line-height:28px;">#1d70b8<br> $govuk-brand-colour</div></td>
+              <td class="govuk-table__cell"><div style="float:left;width: 40px; height:40px; border-radius: 100%;background-color: 	#008548; margin-right:10px;margin-top:5px;"></div> <div style="padding-top:12px;">#008548</div></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+
+
+
+
       </div>
     </div>
   </div>
