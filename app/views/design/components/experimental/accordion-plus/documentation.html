@@ -1,5 +1,5 @@
 
-{% extends "layout_designsystem.html" %}
+{% extends "layout_designsystem_V2.html" %}
 
 
 
@@ -14,55 +14,245 @@
     max-width: 1200px;
 }
 
+.searchBox {
+    border-width: 1px;
+    background-image:unset;
+    padding-left:10px;
+}
+
+
+.select2-container--default .select2-results__option--group {
+  padding: 0;
+  font-family: arial;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000;
+  line-height: 39px;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+  outline: none;
+}
+
+.select2-container {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single:focus{
+  outline: none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-results__option {
+  padding: 6px 6px 6px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px;
+  color: #000000;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  height: 39px;
+}
+
+.select2-container {
+  width: 275px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.form-label-bold {
+  font-weight: 600;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+  background-color: transparent;
+  background-size: contain;
+  border: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin: auto !important;
+  top: 8px;
+  left: -5px;
+}
+
+.select2-search--dropdown {
+  padding: 0px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  top: -38px;
+  width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 0px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+outline:0;
+}
+
+.select2-dropdown {
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-results__group {
+  padding: 6px 6px 6px 10px;
+}
+
+
+.select2-container--open .select2-dropdown--below {
+    width: unset;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    overflow-x: scroll;
+}
+
+
 </style>
 
 
-  <div class="govuk-grid-row govuk-body">
 
-    <div class="govuk-grid-column-full page-title">
-      <h1>
-        Enhanced dropdown
-      </h1>
-      <p class="page-subtitle">
-        This component has been designed to allow users to easily search dropdown menus containing long lists of data without having to scroll. 
-      </p>
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+
+      <div class="sideMenuSection">
+        <ul>
+          <li>
+            <a href="/design/colour/">Colour</a>
+          </li>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+          <!-- <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Accessible auto-complete</a>
+          </li>
+          <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Alternate accordion</a>
+          </li> -->
+            <li class="active-sub-side-menu">
+              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Accordion plus</a>
+            
+<ul>
+
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size:16px;" href="/design/components/experimental/accordion-plus/">Overview</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/accordion-plus/status.html">Status</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;color: #008548;font-weight:600;" href="/design/components/experimental/accordion-plus/documentation.html">Documentation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Dropdown with search</a>
+              </li>
+              
+              <li>
+                <a href="/design/fontstypography/">Fonts & typography</a>
+              </li>
+              <li>
+                <a href="/design/icons/">Icons</a>
+              </li>
+              <li>
+                <a href="/design/images/">Images</a>
+              </li>
+              <li>
+                <a href="/design/layouts/">Layouts</a>
+              </li>
+              <li>
+                <a href="/design/patterns/">Patterns</a>
+              </li>
+
+        </ul>
+      </div>
+
     </div>
 
-    <div class="govuk-grid-column-full">
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Experimental component</span>
+        <h1 class="govuk-heading-xl">
+        Accordion plus
+        </h1>
+      </div>
+
+        <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Component owner</h2>
+        <p style="margin-bottom: 40px;">Lorem ipsum...</p>
+      </div>
+
+
+
       
 
-        <ul id="horizontal-list">
-          <li>
-            <a class="" href="/design/components/experimental/enhanced-dropdown/">
-              Overview
-            </a>
-          </li>
-          <!-- <li>
-            <a class="" href="/design/components/experimental/enhanced-dropdown/accessibility.html">
-              Accessibility
-            </a>
-          </li> -->
-          <li>
-            <a class="" href="/design/components/experimental/enhanced-dropdown/status.html">
-              Status
-            </a>
-          </li>
-          <li>
-            <a class="current" href="/design/components/experimental/enhanced-dropdown/documentation.html">
-              Documentation
-            </a>
-          </li>
-        </ul>
+              {% include "includes/helpimprove.html" %}  
 
       </div>
+    </div>  
+        
+
+
 
   </div>
 
+</div>
+
 {% endblock %}
 
-<style>
-  .govuk-width-container{
-    max-width: 1100px;
-}
-</style>
+
+{% block footer %}
+<!-- {% include "includes/backToTop.html" %} -->
+<!-- {% include "includes/componentsList.html" %} -->
+{% endblock %}
+
 
