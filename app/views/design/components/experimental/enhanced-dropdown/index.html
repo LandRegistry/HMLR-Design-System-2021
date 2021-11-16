@@ -176,11 +176,11 @@ pre {
           </li> -->
 
           <li class="sub-side-menu">
-            <a  style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Accordion plus</a>
+            <a  style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Table inside accordian</a>
           </li>
 
             <li class="active-sub-side-menu">
-              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Dropdown with search</a>
+              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Searchable select</a>
             
 <ul>
 
@@ -239,7 +239,7 @@ pre {
         <div class="govuk-grid-column-full">
         <span class="govuk-caption-xl">Experimental component</span>
         <h1 class="govuk-heading-xl">
-        Dropdown with search
+        Searchable select
         </h1>
       </div>
 
@@ -258,21 +258,21 @@ pre {
                 </h2>
                 <ul class="govuk-tabs__list">
                   <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                    <a class="govuk-tabs__tab" href="#animated">
-                      Animated
-                    </a>
-                  </li>
-                  <li class="govuk-tabs__list-item">
                     <a class="govuk-tabs__tab" href="#Interactive">
                       Interactive
                     </a>
                   </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#animated">
+                      Animated
+                    </a>
+                  </li>
                 </ul>
-                <div class="govuk-tabs__panel" id="animated">
-                  <img src="/public/images/enhanced_dropdown.gif">
+                <div class="govuk-tabs__panel" id="animated" style="height:359px;">
+                  <img src="/public/images/dropdown-search-giph.gif" width="300">
                 </div>
       
-                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Interactive">
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Interactive" style="height:359px;">
       
                   
       
@@ -280,17 +280,17 @@ pre {
             
                         <div class="govuk-body" style="margin-bottom: 30px;">
                             <label class="govuk-label form-label-bold">
-                                Users and groups
+                                Add project team members
                             </label>
                             <select id="cat" class="form-control">
-                                <optgroup label="Recent searches">
-                                    <option value="NewLayout_Default.html">Andy Carr (you)</option>
+                                <!-- <optgroup label="Recent searches"> -->
+                                    <!-- <option value="NewLayout_Default.html">Andy Carr (you)</option>
                                     <option value="NewLayout_JT.html">John Taylor</option>
                                     <option value="NewLayout_PG.html">Pat Gannon</option>
                                     <option value="NewLayout_NA.html">Nicola Andrews</option>
                                     <option value="NewLayout_JP.html">Jon Parker</option>
-                                    </optgroup>
-                                    <optgroup label="All colleagues">
+                                    </optgroup> -->
+                                    <!-- <optgroup label="All colleagues"> -->
                                     <option value="#">Aaron Flynn</option>
                                     <option value="#">Alex Blewett</option>
                                     <option value="NewLayout_Default">Andy Carr</option>
@@ -311,7 +311,7 @@ pre {
                                     <option value="#">Simon Skidmore</option>
                                     <option value="#">Sue Watchman</option>
                                     <option value="#">Tony Watson</option>
-                                    </optgroup>
+                                    <!-- </optgroup> -->
                             </select>
                         </div>
             
@@ -348,7 +348,6 @@ pre {
                   <h2 class="govuk-heading-l">
                     How to use
                   </h2>
-                  <p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo.</p>
                   <div class="govuk-grid-column-full" style="padding:0px;">
 
                     <div class="govuk-grid-column-one-half howToColumn">
@@ -357,7 +356,7 @@ pre {
                           <img width="100%" src="/public/images/experimental_dropdown_5items.PNG">
                         </div>
                         <div class="howToDo">
-                            <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">DO</p>
+                            <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">USE</p>
                             <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
                         </div>
                       </div>  
@@ -371,12 +370,13 @@ pre {
         
                         </div>
                         <div class="howToDont">
-                          <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T</p>
+                          <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T USE</p>
                           <p class="howToText">When the dropdown menu has just a few items in it.</p>
                         </div>
                       </div>  
                     </div>
                   </div>
+
 
                         
                 </div>
