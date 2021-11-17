@@ -153,6 +153,10 @@ pre {
   padding: 0px 15px;
 }
 
+.govuk-accordion__controls{
+  display: none;
+}
+
 
 </style>
 
@@ -266,7 +270,8 @@ pre {
       
                   
                   <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
-                    <!-- <div class="govuk-accordion__controls"><button type="button" class="govuk-accordion__open-all" aria-expanded="false">Open all<span class="govuk-visually-hidden"> sections</span></button></div> -->
+                  
+                  <div class="govuk-accordion__controls" style="display: block;"><button type="button" class="govuk-accordion__open-all" aria-expanded="false">Open all<span class="govuk-visually-hidden"> sections</span></button></div>
                   <div class="govuk-accordion__section">
                     <div class="govuk-accordion__section-header">
                       <h2 class="govuk-accordion__section-heading">
@@ -481,9 +486,247 @@ pre {
                         </div>
                       </div>  
                     </div>
+
+                    
                   </div>
+                  
         </div>
-      
+        <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-m">
+            Interactive table inside accordian
+          </h2>
+          <p>The table can also be adapted to include suitable interactive elements such checkboxes.
+          </p>
+          <p style="margin-bottom: 40px;">The example below is taken from the Request Title Information service on Portal Refresh. The accordians allow users to reveal each section for the document types relevant to them, compare the list of available documents and select the required versions.
+          </p>
+
+          <div class="govuk-tabs" data-module="govuk-tabs" >
+            <h2 class="govuk-tabs__title">
+              Examples
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#Interactive2">
+                  Interactive
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#animated2">
+                  Animated
+                </a>
+              </li>
+            </ul>
+            <div class="govuk-tabs__panel" id="animated2" style="padding-bottom: 0px; height: 600px;">
+              <img src="/public/images/table-inside-accordian-interactive.gif" width="500">
+            </div>
+  
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Interactive2" style="height: 600px; overflow-y: scroll;">
+  
+              
+              <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header table_2_header" style="width:35%;">Document type</th>
+                    <th scope="row" class="govuk-table__header table_2_header" style="width:30%;">Status</th>
+                    <th scope="row" class="govuk-table__header table_2_header" style="width:25%;">Format</th>
+                    <th scope="row" class="govuk-table__header table_2_header" style="width:10%;">Cost</th>                  
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td colspan="4" class="govuk-table__cell govuk-table__cell2" style="padding:0px;">
+                      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default" style="margin-bottom: 0px; border-bottom: none; border-top: none;">
+                        <div class="govuk-accordion__section" style="border-top: none;">
+                          <div class="govuk-accordion__section-header">
+                            <h2 class="govuk-accordion__section-heading" >
+                              <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="color: black; font-weight: 400; font-size: 19px;">
+                                Register
+                              </span>
+                            </h2>
+                          </div>
+                          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top:0px;">
+                            <table class="govuk-table">
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:35%; border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="register_current" name="register_current" type="checkbox" value="register_current" onclick="checkbox1A()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        Current
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:30%; border-bottom: none;">Official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:25%; border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:10%; border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style="border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="register_sixteen" name="register_sixteen" type="checkbox" value="register_sixteen" onclick="checkbox1B()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        2016
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:35%; border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="register_02" name="register_02" type="checkbox" value="register_02" onclick="checkbox1C()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        2002
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:30%; border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:25%; border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:10%; border-bottom: none;">£3.00</td>              
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+
+
+                  <tr class="govuk-table__row">
+                    <td colspan="4" class="govuk-table__cell govuk-table__cell2" style="padding:0px;">
+                      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default" style="margin-bottom: 0px; border-bottom: none; border-top: none;">
+                        <div class="govuk-accordion__section" style="border-top: none;">
+                          <div class="govuk-accordion__section-header">
+                            <h2 class="govuk-accordion__section-heading">
+                              <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="color: black; font-weight: 400; font-size: 19px;">
+                                Title plan
+                              </span>
+                            </h2>
+                          </div>
+                          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top:0px;">
+                            <table class="govuk-table">
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:35%; border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_current" name="title_plan_current" type="checkbox" value="title_plan_current" onclick="checkbox2A()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        Current
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:30%; border-bottom: none;">Official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:25%; border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:10%; border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_16" name="title_plan_16" type="checkbox" value="title_plan_16" onclick="checkbox2B()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        2016
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_02" name="title_plan_02" type="checkbox" value="title_plan_02" onclick="checkbox2C()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="register">
+                                        2002
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">£3.00</td>              
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+
+
+                  <tr class="govuk-table__row">
+                    <td colspan="4" class="govuk-table__cell govuk-table__cell2" style="padding:0px;">
+                      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default" style="margin-bottom: 0px; border-bottom: none; border-top: none;">
+                        <div class="govuk-accordion__section " style="border-top: none;">
+                          <div class="govuk-accordion__section-header" style="border-bottom: 1px solid #b1b4b6;">
+                            <h2 class="govuk-accordion__section-heading">
+                              <span class="govuk-accordion__section-button" id="accordion-default-heading-1" style="color: black; font-weight: 400; font-size: 19px;">
+                                Title plan map
+                              </span>
+                            </h2>
+                          </div>
+                          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top:0px;">
+                            <table class="govuk-table">
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row" style="width:35%;">
+                                  <td class="govuk-table__cell govuk-table__cell2" style="border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_map_current" name="title_plan_map_current" type="checkbox" value="title_plan_map" onclick="checkbox3A()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="title_plan_map">
+                                        Current
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:30%; border-bottom: none;">Official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:25%; border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style="width:10%; border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_map_16" name="title_plan_map_16" type="checkbox" value="title_plan_map_16" onclick="checkbox3B()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="title_plan_map">
+                                        2016
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">£3.00</td>              
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="title_plan_map_02" name="title_plan_map_02" type="checkbox" value="title_plan_map_02" onclick="checkbox3C()">
+                                      <label class="govuk-label govuk-checkboxes__label" for="title_plan_map">
+                                        2002
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">Non-official Copy</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">PDF</td>
+                                  <td class="govuk-table__cell govuk-table__cell2" style = "border-bottom: none;">£3.00</td>              
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+        
+          
+            </div>
+
+  
+          </div>
+
+        </div>
+        <!-- <div class="govuk-grid-column-full">
+          <p class="govuk-body"></p>
+        </div> -->
       
                         
                 </div>
