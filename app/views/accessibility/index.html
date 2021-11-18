@@ -6,11 +6,7 @@
 {% endblock %}
 
 {% block content %}
-<style>
-  .govuk-link:link, a:link, a:visited, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
-    color: #008548 !important;
-}
-</style>
+
 
 <div class="contentSection">
 
@@ -92,21 +88,23 @@
 
       <div class="govuk-grid-column-full">
         <h2 class="govuk-heading-l">Accessibility by Law</h2>
-        <p>Accessibility is a part of several laws and standards we must follow. Each of the standards feed into the <a href="https://www.gov.uk/guidance/equality-act-2010-guidance" target="_blank" class="govuk-link">Equality Act 2010</a> and the <a href="https://www.gov.uk/government/publications/public-sector-equality-duty" target="_blank" class="govuk-link">Public Sector Equality Duty</a>.</p>
+        <p>Accessibility is a part of several laws and standards we must follow. Each of the standards feed into the <a href="https://www.gov.uk/guidance/equality-act-2010-guidance" target="_blank" class="govuk-link" style="color: #008548 !important;">Equality Act 2010</a> and the <a href="https://www.gov.uk/government/publications/public-sector-equality-duty" target="_blank" style="color: #008548 !important;" class="govuk-link">Public Sector Equality Duty</a>.</p>
 
-        <p>If you are building anything which runs in a browser, you will need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/the-public-sector-bodies-accessibility-regulations-2018" target="_blank" class="govuk-link">Public Sector Bodies Accessibility Regulations 2018</a>.</p>
+        <p>If you are building anything which runs in a browser, you will need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/the-public-sector-bodies-accessibility-regulations-2018" target="_blank" class="govuk-link" style="color: #008548 !important;">Public Sector Bodies Accessibility Regulations 2018</a>.</p>
           
-        <p>If you are procuring hardware or software you will need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/en301549-accessibility-requirements-for-ict-products-and-services" class="govuk-link" target="_blank">EN 301 549 Accessibility Requirements for ICT products and services</a>.</p>
+        <p>If you are procuring hardware or software you will need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/en301549-accessibility-requirements-for-ict-products-and-services" style="color: #008548 !important;" class="govuk-link" target="_blank">EN 301 549 Accessibility Requirements for ICT products and services</a>.</p>
           
-        <p>If you are working to the GOV.UK Service Standard you will also need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/accessibility-regulations-vs-the-govuk-service-standard" class="govuk-link" target="_blank">Government Accessibility Requirements</a>.</p>
+        <p>If you are working to the GOV.UK Service Standard you will also need to meet the <a href="https://accessibility-manual.dwp.gov.uk/accessibility-law/accessibility-regulations-vs-the-govuk-service-standard" style="color: #008548 !important;" class="govuk-link" target="_blank">Government Accessibility Requirements</a>.</p>
       </div>
 
       <div class="govuk-grid-column-full">
 
         <h2 class="govuk-heading-l">Further guidance</h2>
-        <p>If you require further guidance on accessibility, please message the <a href="https://landregistry.slack.com/archives/C8N1WEFFU" class="govuk-link">#accessibility</a> slack channel or email our Accessibility Consultant.
+        <p>If you require further guidance on accessibility, please message the <a href="https://landregistry.slack.com/archives/C8N1WEFFU" class="govuk-link" style="color: #008548 !important;">#accessibility</a> slack channel.
         </p>
       </div>
+      {% include "includes/helpimprove.html" %}  
+
     </div>
     </div>
 
