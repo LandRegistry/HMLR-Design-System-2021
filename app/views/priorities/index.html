@@ -1,5 +1,5 @@
 
-{% extends "layout_designsystem_V2.html" %}
+{% extends "layout_designsystem_V2_copy.html" %}
 
 {% block pageTitle %}
   Design system
@@ -11,7 +11,14 @@
 
   <div class="govuk-grid-row govuk-body">
     <div class="govuk-grid-column-full">
-    <div class="sideMenu">
+    <div class="sideMenu" style="margin-right: 50px; width: 225px;">
+      <div class="sideMenuSection">
+        <ul>
+          <li class="active-side-menu">
+            <a class="current-main" href="/priorities/">Homepage</a>
+          </li>
+        </ul>
+      </div>
       <div class="sideMenuSection">
         <p class="sideMenuTitle">Experimental components</p>
         <ul>
@@ -39,9 +46,7 @@
           <li>
             <a href="/priorities/components/navmenu.html">Nav menu</a>
           </li>
-          <li>
-            <a href="/priorities/components/signinmenu.html">Sign in menu</a>
-          </li>
+
           <li>
             <a href="/priorities/components/pagination.html">Pagination</a>
           </li>
@@ -100,138 +105,26 @@
     <div class="right-content">
 
       <div class="govuk-grid-column-full">
-        <h1 class="govuk-heading-xl">
-        Handbook
+        <h1 class="govuk-heading-l">
+        Prioritising experimental components and patterns
         </h1>
-        <p style="font-size:24px;">
-          The HMLR Experience Library Handbook is designed to get you up and running as quickly as possible, with easy access to toolkits, guides and helpful information.
+        <p style="font-size:19px;">
+          A few weeks ago, we asked each team to provide a brief summary of the experimental components and patterns currently being explored for use across their service. 
         </p>
-        </div>
-        <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">New designers</h2>
-        <p>
-          If you're new to HM Land Registry or just need some guidance, check out our <a href="designers.html">getting started guide for designers</a> page.
+        <p style="font-size:19px;">
+          Before components or patterns can be added to the Design System, they must first be reviewed by the Design System steering group. Input from the community is needed to help us prioritise which components and patterns to review first.
         </p>
-        </div>
-        <!-- <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">Developers</h2>
-        <p>
-          If you're new to HM Land Registry or just need some guidance, check out our <a href="/handbook/developers.html">getting started guide for developers</a> page.
+        <p style="font-size:19px;">
+          <strong>The task:</strong>
         </p>
-        </div> -->
-        <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">Create prototypes and wireframes</h2>
-        <div class="toolkits-container">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Look through each experimental component and pattern.</li>
+          <li>Complete the survey.</li>
+        </ul>
 
-          <!-- <div class="toolkit">
-            <div style="display: flex; align-items:center;">
-            
-              <img width="32" alt="Figma-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/256px-Figma-logo.svg.png" style="padding:0px 20px 0px 10px;">        
-  
-              <div>
-                <h2 style="display:block; margin:0px; font-size: 27px;">Figma</h2>
-                <h5 style="display:block; margin: 0px; font-size:14px;font-weight: 400;">Version 1.02</h5>
-                <a href="#" style="font-size: 16px;">Download</a>
-              </div>
-              
-            </div>
-          
-
-          </div>
-
-          <div class="toolkit">
-            <div style="display: flex; align-items:center;">
-            
-              <img width="32" alt="Adobe XD CC icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/512px-Adobe_XD_CC_icon.svg.png" style="padding:0px 20px 0px 10px;">        
-  
-              <div>
-                <h2 style="display:block; margin:0px; font-size: 27px;">Adobe XD</h2>
-                <h5 style="display:block; margin: 0px; font-size:14px;font-weight: 400;">Version 1.02</h5>
-                <a href="#" style="font-size: 16px;">Download</a>
-              </div>
-              
-            </div>
-          
-
-          </div> -->
-
-
-
-
-          <div class="toolkit">
-            <div style="display: flex; align-items: center;margin-bottom: 12px;">
-            
-              <a title="Figma, Public domain, via Wikimedia Commons" href="#"><img width="32" alt="Figma-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/256px-Figma-logo.svg.png"></a>            
-  
-              <div style="padding-left: clamp(4px, 10px, 15px);">
-                <h2 style="display:block; margin:0px; font-size: 27px;">Figma</h2>
-                <h5 style="display:block; margin: 0px; font-size:14px;font-weight: 400;">Version 1.02</h5>
-              </div>
-              
-            </div>
-            <p style="font-size: 16px; margin-bottom: 8px;">Library of components and styles based on the HM Land Registry design system.</p>
-            <a href="#" style="font-size: 16px;">Download</a>
-
-          </div>
-          <div class="toolkit">
-            <div style="display: flex; margin-bottom: 12px; align-items: center;">
-            
-              <a title="™/®Adobe Systems, Public domain, via Wikimedia Commons" href="#"><img width="40" alt="Adobe XD CC icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/512px-Adobe_XD_CC_icon.svg.png"></a>  
-              <div style="padding-left: clamp(4px, 10px, 15px);">
-                <h2 style="display:block; margin:0px; font-size: 27px;">Adobe XD</h2>
-                <h5 style="display:block; margin: 0px; font-size:14px;font-weight: 400;">Version 1.02</h5>
-              </div>
-              
-            </div>
-            <p style="font-size: 16px; margin-bottom: 8px;">Library of components and styles based on the HM Land Registry design system.</p>
-            <a href="#" style="font-size: 16px;">Download</a>
-
-          </div>
-          <!-- <div class="toolkit">
-            <div style="display: flex; margin-bottom: 12px; align-items: center;">
-            
-              <a title="Bohemian Coding, Public domain, via Wikimedia Commons" href="#"><img width="40" alt="Sketch Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sketch_Logo.svg/256px-Sketch_Logo.svg.png"></a>  
-              <div style="padding-left: clamp(4px, 10px, 15px);">
-                <h2 style="display:block; margin:0px; font-size: 27px;">Sketch kit</h2>
-                <h5 style="display:block; margin: 0px; font-size:14px; font-weight: 400;">Version 1.02</h5>
-              </div>
-              
-            </div>
-            <p style="font-size: 16px; margin-bottom: 8px;">Lorem ispum dolor sit amet, cons etcetur adipiscing elit</p>
-            <a href="#" style="font-size: 16px;">Download</a>
-
-          </div>
-          <div class="toolkit">             
-            <h2 style="display:block; margin:0px; font-size: 27px;">Prototyping</h2>
-            <h5 style="display:block; margin: 0px; font-size:14px; margin-bottom: 12px;font-weight: 400;">Version 1.02</h5>
-              
-            <p style="font-size: 16px;margin-bottom: 8px;">Lorem ispum dolor sit amet, cons etcetur adipiscing elit</p>
-            <a href="#" style="font-size: 16px;">Download</a>
-
-          </div>
-          <div class="toolkit">
-            
-            <h2 style="display:block; margin:0px; font-size: 27px;">Developing</h2>
-            <h5 style="display:block; margin: 0px; font-size:14px; margin-bottom: 12px; font-weight: 400;">Version 1.02</h5>
-              
-            <p style="font-size: 16px; margin-bottom: 8px;">Lorem ispum dolor sit amet, cons etcetur adipiscing elit</p>
-            <a href="#" style="font-size: 16px;">Download</a>
-
-          </div> -->
-        </div>
         </div>
 
-        <div class="govuk-grid-column-full">
-          <h2 class="govuk-heading-l">Helpful information</h2>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Different <a href="job-roles.html">job roles</a> at HM Land Registry</li>
-          </ul>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a href="job-roles.html">Software</a> used across different projects and disciplines</li>
-          </ul>
-          </div>
 
-        {% include "includes/feedback.html" %}          
 
       </div>
     </div>
