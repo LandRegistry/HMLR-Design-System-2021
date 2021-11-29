@@ -17,16 +17,16 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 }
 
   .govuk-link:link, a:link, a:visited, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
-    color: #008548;
+    color: #006637;
 }
 
 .govuk-breadcrumbs__link:link, .govuk-breadcrumbs__link:visited {
-    color: #008548;
+    color: #006637;
 }
 
  /* Navigation menu */
   .navbar {
-      background: #008548;
+      background: #006637;
       padding-top: 25px;
   }
 
@@ -40,7 +40,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
       margin: auto;
 
       a {
-        color: #008548;
+        color: #006637;
         line-height: 50px;
         padding: 0px;
         margin-right:50px;
@@ -110,7 +110,7 @@ float: left;
    /* Hero section*/
 
 .heroSection {
-    background: #008548;
+    background: #006637;
     padding: 25px 0px;
     margin-bottom: 75px;
 }
@@ -154,7 +154,7 @@ float: left;
 
  .link {
      font-weight:600;
-     color:#008548;
+     color:#006637;
      font-size: 24px;
      margin-bottom: 10px;
  }
@@ -191,13 +191,13 @@ float: left;
 .active-side-menu {
   margin: 0px 0px 6px -20px!important;
   padding-left: 16px;
-  border-left: 4px solid #008548;
+  border-left: 4px solid #006637;
 }
 
 .active-side-menu-expanded {
   margin: 15px 0px 15px -20px!important;
   padding-left: 16px;
-  border-left: 4px solid #008548;
+  border-left: 4px solid #006637;
 }
 
 .sub-side-menu {
@@ -212,7 +212,7 @@ float: left;
   .active-sub-side-menu {
   margin: 15px 0px 15px 0px!important;
   padding-left: 16px;
-  border-left: 4px solid #008548;
+  border-left: 4px solid #006637;
   }
 
 .sideMenu ul li a {
@@ -220,7 +220,7 @@ float: left;
     text-decoration: none;
     font-size: 16px;
     &:hover{
-        color: #008548;
+        color: #006637;
     }
 }
 
@@ -254,7 +254,7 @@ float: left;
 
 a.current-main{
     font-weight: 900;
-    color: #008548 !important ;
+    color: #006637 !important ;
 }
 
 a.current-main2{
@@ -263,7 +263,7 @@ a.current-main2{
 }
 
 li.current-borderLeft{
-    border-left: 4px solid #008548;
+    border-left: 4px solid #006637;
     padding-left: 6px;
     margin-left: -10px;
 }
@@ -273,27 +273,23 @@ li.current-borderLeft{
     margin: 0px 2px;
     font-size: 19px;
     border-radius: 50px;
-    border: 2px solid #008548;
+    border: 2px solid #006637;
     text-decoration: none;
   
     &.inactive {
       background-color: #ffffff;
-      color: #008548;
+      color: #006637;
   
       &:hover {
-        background-color: #008548;
+        background-color: #006637;
         color: #ffffff;
       }
     }
   
     &.active {
-      background-color: #008548;
+      background-color: #006637;
       color: #ffffff;
-  
-      &:hover {
-        opacity: 0.7;
-      }
-  
+    
     }
   }
 
@@ -311,7 +307,7 @@ li.current-borderLeft{
 
 .componentLink{
     font-weight: 700;
-    color: #008548;
+    color: #006637;
     font-size: 22px;
     text-decoration: none;
 }
@@ -428,7 +424,7 @@ li code, td code, p code {
 }
 
 .govuk-accordion__section-button{
-    color: #008548;
+    color: #006637;
 }
 
 .componentsListLinks {
@@ -537,7 +533,7 @@ pre {
   }
 
   .js-enabled .govuk-accordion__open-all {
-    color: #008548;
+    color: #006637;
   font-weight: 600;
   margin-bottom: 15px;
   text-decoration:none;
@@ -612,11 +608,11 @@ pre {
 
   .app-step-nav__button--title, .js-hidden, .app-step-nav__link, .js-link, .app-step-nav__toggle-link, .js-toggle-link,
   .app-step-nav__button, .app-step-nav__button--controls, .js-step-controls-button {
-      color: #008548;
+      color: #006637;
   }
 
   .app-step-nav__header:hover .app-step-nav__button:not(:focus), .app-step-nav__header:hover .app-step-nav__circle {
-    color: #008548;
+    color: #006637;
 }
 
 
