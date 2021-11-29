@@ -1,0 +1,172 @@
+
+{% extends "layout_designsystem_V2_copy.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu" style="margin-right: 50px; width: 225px;">
+      <div class="sideMenuSection">
+        <ul>
+            <li>
+            <a href="/priorities/">Homepage</a>
+            </li>
+        </ul>
+    </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Experimental components</p>
+        <ul>
+          <li>
+            <a href="/priorities/components/autocomplete.html">Accessible autocomplete</a>
+          </li>
+          <li>
+            <a href="/priorities/components/nestedradios.html">Nested radio buttons</a>
+          </li>
+          <li>
+            <a href="/priorities/components/sidemenuAccordian.html">Side menu accordian</a>
+          </li>
+          <li>
+            <a href="/priorities/components/closeablebanner.html">Closeable banner</a>
+          </li>
+          <li>
+            <a href="/priorities/components/colourtoggle.html">Colour toggle</a>
+          </li>
+          <li>
+            <a href="/priorities/components/searchwithicon.html">Search box with icon</a>
+          </li>
+          <li>
+            <a href="/priorities/components/tableinsideaccordian.html">Table inside accordian</a>
+          </li>
+          <li class="active-side-menu">
+            <a class="current-main" href="/priorities/components/navmenu.html">Nav menu</a>
+          </li>
+          <!-- <li>
+            <a href="/priorities/components/signinmenu.html">Sign in menu</a>
+          </li> -->
+          <li>
+            <a href="/priorities/components/pagination.html">Pagination</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Experimental patterns</p>
+        <ul>
+          <li>
+            <a href="/priorities/patterns/inlineedit">Inline edit answers</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/languagetoggle">On page language toggle</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/multipleerrors">Multiple errors on page</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/availabledocuments">Displaying available documents to download</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/colourtags">Colours for tags and banners</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/brandedsectionbreak">Branded section break</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/shopping">eCommerce shopping experience</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/before">Before you start page</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/singledata">Single point of contact</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/addresses">Capturing addresses</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/parties">Capturing parties</a>
+          </li>
+          <li>
+            <a href="/priorities/patterns/infills">Completing infills</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+    <div class="right-content">
+
+      <div class="">
+        <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Experimental component</span>
+        <h1 class="govuk-heading-xl">
+        Navigation menu
+        </h1>
+      </div>
+
+        <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">What is this component?</h2>
+        <p>A HMLR branded navigation menu.</p>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <!-- <h2 class="govuk-heading-l">Example</h2> -->
+      
+      
+              <div class="govuk-tabs" data-module="govuk-tabs" >
+                <!-- <h2 class="govuk-tabs__title">
+                  Examples
+                </h2> -->
+                <ul class="govuk-tabs__list">
+                  <!-- <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#Interactive">
+                      Interactive
+                    </a>
+                  </li> -->
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#animated">
+                      Example
+                    </a>
+                  </li>
+                </ul>
+                <div class="govuk-tabs__panel" id="animated" style="height:230px;">
+                  <img src="/public/images/priorities-nav.png" width="720">
+                </div>
+      
+      
+
+      
+              </div>
+            </div>
+
+
+            <div class="govuk-grid-column-full">
+
+                  <h2 class="govuk-heading-l">
+                    Why was this component needed?
+                  </h2>
+                  <p>This navigation menu has been created to sit across all portal services.</p> 
+                 
+
+
+
+      
+
+
+      </div>
+    </div>  
+        
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
