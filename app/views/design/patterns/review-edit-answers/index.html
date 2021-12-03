@@ -149,7 +149,38 @@ pre {
     overflow-x: scroll;
 }
 
+.govuk-list {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
 
+.govuk-list {
+    margin-bottom: 20px;
+}
+
+.govuk-list>li {
+    margin-bottom: 5px;
+}
+
+.app-page-contents__list li {
+    margin-left: 0;
+    padding-right: 15px;
+}
+
+.app-page-contents__list li:before {
+    content: "– ";
+    display: inline-block;
+    padding-right: 5px;
+}
 
 </style>
 
@@ -209,20 +240,30 @@ pre {
     <div class="right-content">
 
       <div class="">
-        <div class="govuk-grid-column-full">
-        <span class="govuk-caption-xl">Experimental pattern</span>
+        <div class="govuk-grid-column-full" style="margin-bottom:15px;">
+        <span class="govuk-caption-xl">HM Land Registry pattern</span>
         <h1 class="govuk-heading-xl">
         Inline edit answers
         </h1>
       </div>
 
+      <div class="govuk-grid-column-full" style="margin-bottom:50px;">
+        <h3 class="govuk-heading-m" style="margin-bottom:10px;">Page contents:</h3>
+        <ul class="govuk-list app-page-contents__list">
+          <li><a href="#what">What is this pattern</a></li>
+          <li><a href="#example">Example</a></li>
+          <li><a href="#why">Why was this needed</a></li>
+          <li><a href="#when">When to use</a></li>
+        </ul>
+      </div>
+
         <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">What is this pattern?</h2>
+        <h2 id="what" class="govuk-heading-l">What is this pattern</h2>
         <p>This pattern is an adapted version of the <a class="govuk-link" href="https://design-system.service.gov.uk/patterns/check-answers/">check answers</a> GOV.UK pattern designed to allow users to directly make changes to the summary information.</p>
       </div>
 
       <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">Example</h2>
+        <h2 id="example" class="govuk-heading-l">Example</h2>
       
       
               <div class="govuk-tabs" data-module="govuk-tabs" >
@@ -250,8 +291,8 @@ pre {
 
             <div class="govuk-grid-column-full">
 
-                  <h2 class="govuk-heading-l">
-                    Why was this pattern needed?
+                  <h2 id="why" class="govuk-heading-l">
+                    Why was this pattern needed
                   </h2>
                   <p>Replicating the GOV.UK pattern, a change link appears at the end of each row to allow users to alter their inputs if the information displayed in the summary table is incorrect. If the link labelled change is clicked, the user will not be brought back to the original input screen to make a change, as is the case with the GOV.UK pattern. Instead, the answer will be replaced with a text input auto-populated with the original answer. This will enable the user to make the change to the input without being redirected from the summary page to create a more seamless user experience.</p>
 
@@ -259,11 +300,38 @@ pre {
 
 
                 <div class="govuk-grid-column-full">
-                  <h2 class="govuk-heading-l">
+                  <h2 id="when" class="govuk-heading-l">
                     When to use
                   </h2>
                   <p>Using this pattern is appropriate in instances where the user needs to alter their original text inputs or to modify stored data. No testing has been carried out around the use of this pattern for changing multiple choice inputs such radios or checkboxes.</p>
                 </div>
+
+
+                <div class="govuk-grid-column-full" style="margin-bottom: 50px;">
+    
+                  <h2 class="govuk-heading-l">
+                    Additional information
+                  </h2>
+          
+                  <div>
+          
+                    <div class="contentButtonBox Wide">
+                      <a href="status.html">
+                        <p class="link">Status</p>
+                        <p class="description">View the current development and research status of this component.</p>
+                      </a>
+                    </div>
+          
+                    <div class="contentButtonBox Wide">
+                      <a href="documentation.html">
+                        <p class="link">Documentation</p>
+                        <p class="description">Contains information on the component's owners.</p>
+                      </a>
+                    </div>
+          
+                  </div>
+          
+              </div>
 
               {% include "includes/helpimprove.html" %}  
 

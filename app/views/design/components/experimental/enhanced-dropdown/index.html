@@ -149,6 +149,38 @@ pre {
     overflow-x: scroll;
 }
 
+.govuk-list {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.govuk-list {
+    margin-bottom: 20px;
+}
+
+.govuk-list>li {
+    margin-bottom: 5px;
+}
+
+.app-page-contents__list li {
+    margin-left: 0;
+    padding-right: 15px;
+}
+
+.app-page-contents__list li:before {
+    content: "– ";
+    display: inline-block;
+    padding-right: 5px;
+}
 
 </style>
 
@@ -185,7 +217,7 @@ pre {
 <ul>
 
                   <li class="sub-sub-side-menu">
-                    <a style="font-size: 16px;color: #008548;font-weight:600;" href="/design/components/experimental/enhanced-dropdown/">Overview</a>
+                    <a style="font-size: 16px;color: #006637;font-weight:600;" href="/design/components/experimental/enhanced-dropdown/">Overview</a>
                   </li>
                   <li class="sub-sub-side-menu">
                     <a style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/status.html">Status</a>
@@ -236,20 +268,32 @@ pre {
     <div class="right-content">
 
       <div class="">
-        <div class="govuk-grid-column-full">
-        <span class="govuk-caption-xl">Experimental component</span>
+        <div class="govuk-grid-column-full" style="margin-bottom:15px;">
+        <span class="govuk-caption-xl">HM Land Registry component</span>
         <h1 class="govuk-heading-xl">
         Searchable dropdown
         </h1>
       </div>
 
+
+      <div class="govuk-grid-column-full" style="margin-bottom:50px;">
+        <h3 class="govuk-heading-m" style="margin-bottom:10px;">Page contents:</h3>
+        <ul class="govuk-list app-page-contents__list">
+          <li><a href="#what">What is this component</a></li>
+          <li><a href="#example">Example</a></li>
+          <li><a href="#why">Why was this needed</a></li>
+          <li><a href="#when">When to use</a></li>
+          <li><a href="#how">How to use</a></li>
+        </ul>
+      </div>
+
         <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">What is this component?</h2>
+        <h2 id="what" class="govuk-heading-l">What is this component</h2>
         <p>This component has been designed to allow users to easily search dropdown menus containing long lists of data without having to scroll.</p>
       </div>
 
       <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l">Example</h2>
+        <h2 id="example" class="govuk-heading-l">Example</h2>
       
       
               <div class="govuk-tabs" data-module="govuk-tabs" >
@@ -327,8 +371,8 @@ pre {
 
             <div class="govuk-grid-column-full">
 
-                  <h2 class="govuk-heading-l">
-                    Why was this component needed?
+                  <h2 id="why" class="govuk-heading-l">
+                    Why was this component needed
                   </h2>
                   <p>The Portal Refresh team working on View My Applications are introducing a new update that allows users to see applications lodged by anyone in their organisation. This means that the user potentially has access to hundreds of different user applications.</p> 
                   <p>To allow the user to view all of the applications for a particular individual, a dropdown menu was introduced. This could mean potentially scrolling through a list of hundreds of colleagues. By implementing search functionality within the dropdown menu itself, the user is able to locate a colleague quickly by typing the start of their name. As the user types, the search starts filtering the names in the dropdown menu.</p>
@@ -337,7 +381,7 @@ pre {
 
 
                 <div class="govuk-grid-column-full">
-                  <h2 class="govuk-heading-l">
+                  <h2 id="when" class="govuk-heading-l">
                     When to use
                   </h2>
                   <p>This component should be used when the dropdown menu contains more than 20 options and no other standard GDS solution (check boxes, radio buttons) create a suitable user experience.</p>
@@ -345,7 +389,7 @@ pre {
 
 
       <div class="govuk-grid-column-full">
-                  <h2 class="govuk-heading-l">
+                  <h2 id="how" class="govuk-heading-l">
                     How to use
                   </h2>
                   <div class="govuk-grid-column-full" style="padding:0px;">
@@ -380,6 +424,33 @@ pre {
 
                         
                 </div>
+
+
+                <div class="govuk-grid-column-full" style="margin-bottom: 50px;">
+    
+                  <h2 class="govuk-heading-l">
+                    Additional information
+                  </h2>
+          
+                  <div>
+          
+                    <div class="contentButtonBox Wide">
+                      <a href="status.html">
+                        <p class="link">Status</p>
+                        <p class="description">View the current development and research status of this component.</p>
+                      </a>
+                    </div>
+          
+                    <div class="contentButtonBox Wide">
+                      <a href="documentation.html">
+                        <p class="link">Documentation</p>
+                        <p class="description">Contains information on the component's owners.</p>
+                      </a>
+                    </div>
+          
+                  </div>
+          
+              </div>
 
                 <!-- <div class="govuk-grid-column-full">
 
