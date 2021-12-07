@@ -72,6 +72,53 @@ margin-bottom:5px;
   padding-top:10px;
 }
 
+.govuk-list {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.govuk-list {
+    margin-bottom: 20px;
+}
+
+.govuk-list>li {
+    margin-bottom: 5px;
+}
+
+.app-page-contents__list li {
+    margin-left: 0;
+    padding-right: 15px;
+}
+
+.app-page-contents__list li:before {
+    content: "– ";
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.govuk-grid-column-one-third {
+    padding: 0 15px 50px 15px;
+}
+
+.active-sub-side-menu {
+    margin: 0px 0px 6px 0px !important;
+    padding-left: 16px;
+    border-left: 4px solid #006637;
+}
+
+.govuk-grid-column-full {
+    margin-bottom: 50px;
+}
+
 </style>
 
 <div class="contentSection">
@@ -101,7 +148,7 @@ margin-bottom:5px;
             <li class="active-sub-side-menu">
               <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Searchable dropdown</a>
             
-<ul>
+<!-- <ul>
 
                   <li class="sub-sub-side-menu">
                     <a style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Overview</a>
@@ -112,7 +159,7 @@ margin-bottom:5px;
                   <li class="sub-sub-side-menu">
                     <a style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/documentation.html">Documentation</a>
                   </li>
-                </ul>
+                </ul> -->
               </li>
               <!-- <li class="sub-side-menu">
                 <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Interactive banner</a>
@@ -156,18 +203,39 @@ margin-bottom:5px;
     <div class="right-content">
 
 
-        <div class="govuk-grid-column-full">
-          <span class="govuk-caption-xl">HM Land Registry component</span>
-          <h1 class="govuk-heading-xl">
-            Searchable dropdown
-          </h1>
-          <p class="page-subtitle">
-            This experimental component has been designed to allow users to easily search dropdown menus containing long lists of data without having to scroll. 
-          </p>
+      <div class="">
+        <div class="govuk-grid-column-full" style="margin-bottom:15px;">
+        <span class="govuk-caption-xl">HM Land Registry component</span>
+        <h1 class="govuk-heading-xl">
+        Searchable dropdown
+        </h1>
+      </div>
+
+          <div class="govuk-grid-column-one-third" style="">
+            <h3 class="govuk-heading-m" style="margin-bottom:10px;">Contents:</h3>
+            <ul class="govuk-list app-page-contents__list">
+              <li><a href="index.html">Overview</a></li>
+              <li><a href="index.html#what">What is this component</a></li>
+              <li><a href="index.html#example">Example</a></li>
+              <li><a href="index.html#why">Why was this needed</a></li>
+              <li><a href="index.html#when">When to use</a></li>
+              <li><a href="index.html#how">How to use</a></li>
+            </ul>
+          </div>
     
-          <p class="page-subtitle">
+          <div class="govuk-grid-column-one-third" style="">
+            <h3 class="govuk-heading-m" style="margin-bottom:10px;">Related pages:</h3>
+            <ul class="govuk-list app-page-contents__list">
+              <li><a href="status.html">Status</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="govuk-grid-column-full">
+          <!-- <p class="page-subtitle">
             The timeline below shows the extent to which this experimental component has been tested, validated and approved.
-          </p>
+          </p> -->
+
+          <h2 id="example" class="govuk-heading-l">Status</h2>
     
     
             <div class="hods-timeline">
@@ -284,7 +352,7 @@ margin-bottom:5px;
       
       
 
-      <div class="govuk-grid-column-full" style="margin-top:50px; margin-bottom: 50px;">
+      <!-- <div class="govuk-grid-column-full" style="margin-top:50px; margin-bottom: 50px;">
     
         <h2 class="govuk-heading-l">
           Additional information
@@ -308,7 +376,7 @@ margin-bottom:5px;
 
         </div>
 
-    </div>
+    </div> -->
       
       
       
