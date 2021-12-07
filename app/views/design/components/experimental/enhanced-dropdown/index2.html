@@ -1,0 +1,419 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+
+
+{% block pageTitle %}
+  Getting started
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-width-container {
+    max-width: 1200px;
+}
+
+.searchBox {
+    border-width: 1px;
+    background-image:unset;
+    padding-left:10px;
+}
+
+
+.select2-container--default .select2-results__option--group {
+  padding: 0;
+  font-family: arial;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000;
+  line-height: 39px;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+  outline: none;
+}
+
+.select2-container {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single:focus{
+  outline: none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-results__option {
+  padding: 6px 6px 6px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px;
+  color: #000000;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  height: 39px;
+}
+
+.select2-container {
+  width: 275px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.form-label-bold {
+  font-weight: 600;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+  background-color: transparent;
+  background-size: contain;
+  border: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin: auto !important;
+  top: 8px;
+  left: -5px;
+}
+
+.select2-search--dropdown {
+  padding: 0px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  top: -38px;
+  width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 0px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+outline:0;
+}
+
+.select2-dropdown {
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-results__group {
+  padding: 6px 6px 6px 10px;
+}
+
+
+.select2-container--open .select2-dropdown--below {
+    width: unset;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    overflow-x: scroll;
+}
+
+
+</style>
+
+
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+
+      <div class="sideMenuSection">
+        <ul>
+          <li>
+            <a href="/design/colour/">Colour</a>
+          </li>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+          <!-- <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Accessible auto-complete</a>
+          </li>
+          <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Alternate accordion</a>
+          </li> -->
+
+          <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Table inside accordian</a>
+          </li>
+
+            <li class="active-sub-side-menu">
+              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Searchable dropdown</a>
+            
+<ul>
+
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;color: #008548;font-weight:600;" href="/design/components/experimental/enhanced-dropdown/">Overview</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/status.html">Status</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/documentation.html">Documentation</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Interactive banner</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">On-page colour toggle</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Print summary</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Radio questions</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Search with icon</a>
+              </li> -->
+
+              
+              <li>
+                <a href="/design/fontstypography/">Fonts & typography</a>
+              </li>
+              <li>
+                <a href="/design/icons/">Icons</a>
+              </li>
+              <!-- <li>
+                <a href="/design/images/">Images</a>
+              </li> -->
+              <li>
+                <a href="/design/layouts/">Layouts</a>
+              </li>
+              <li>
+                <a href="/design/patterns/">Patterns</a>
+              </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="">
+        <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Experimental component</span>
+        <h1 class="govuk-heading-xl">
+        Searchable dropdown
+        </h1>
+      </div>
+
+        <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">What is this component?</h2>
+        <p>This component has been designed to allow users to easily search dropdown menus containing long lists of data without having to scroll.</p>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Example</h2>
+      
+      
+              <div class="govuk-tabs" data-module="govuk-tabs" >
+                <h2 class="govuk-tabs__title">
+                  Examples
+                </h2>
+                <ul class="govuk-tabs__list">
+                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#Interactive">
+                      Interactive
+                    </a>
+                  </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#animated">
+                      Animated
+                    </a>
+                  </li>
+                </ul>
+                <div class="govuk-tabs__panel" id="animated" style="height:359px;">
+                  <img src="/public/images/dropdown-search-giph.gif" width="300">
+                </div>
+      
+                <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Interactive" style="height:359px;">
+      
+                  
+      
+                      <form id="search" style="">
+            
+                        <div class="govuk-body" style="margin-bottom: 30px;">
+                            <label class="govuk-label form-label-bold">
+                                Add project team members
+                            </label>
+                            <select id="cat" class="form-control">
+                                <!-- <optgroup label="Recent searches"> -->
+                                    <!-- <option value="NewLayout_Default.html">Andy Carr (you)</option>
+                                    <option value="NewLayout_JT.html">John Taylor</option>
+                                    <option value="NewLayout_PG.html">Pat Gannon</option>
+                                    <option value="NewLayout_NA.html">Nicola Andrews</option>
+                                    <option value="NewLayout_JP.html">Jon Parker</option>
+                                    </optgroup> -->
+                                    <!-- <optgroup label="All colleagues"> -->
+                                    <option value="#">Aaron Flynn</option>
+                                    <option value="#">Alex Blewett</option>
+                                    <option value="NewLayout_Default">Andy Carr</option>
+                                    <option value="#">Duncan Anderson</option>
+                                    <option value="#">James Thomas</option>
+                                    <option value="#">John Baptiste-Kelly</option>
+                                    <option value="#">John James</option>
+                                    <option value="NewLayout_JT">John Taylor</option>
+                                    <option value="NewLayout_JP.html">Jon Parker</option>
+                                    <option value="#">Juan Pinto-del-Rio</option>
+                                    <option value="#">Lukas Kroening-Maynard</option>
+                                    <option value="#">Mark Hornsby</option>
+                                    <option value="#">Melvia Mathew</option>
+                                    <option value="#">Neil Butler</option>
+                                    <option value="NewLayout_NA.html">Nicola Andrews</option>
+                                    <option value="NewLayout_PG.html">Pat Gannon</option>
+                                    <option value="#">Romani Davies</option>
+                                    <option value="#">Simon Skidmore</option>
+                                    <option value="#">Sue Watchman</option>
+                                    <option value="#">Tony Watson</option>
+                                    <!-- </optgroup> -->
+                            </select>
+                        </div>
+            
+                    </form>
+              
+                </div>
+      
+
+      
+              </div>
+            </div>
+
+
+            <div class="govuk-grid-column-full">
+
+                  <h2 class="govuk-heading-l">
+                    Why was this component needed?
+                  </h2>
+                  <p>The Portal Refresh team working on View My Applications are introducing a new update that allows users to see applications lodged by anyone in their organisation. This means that the user potentially has access to hundreds of different user applications.</p> 
+                  <p>To allow the user to view all of the applications for a particular individual, a dropdown menu was introduced. This could mean potentially scrolling through a list of hundreds of colleagues. By implementing search functionality within the dropdown menu itself, the user is able to locate a colleague quickly by typing the start of their name. As the user types, the search starts filtering the names in the dropdown menu.</p>
+      
+                </div>
+
+
+                <div class="govuk-grid-column-full">
+                  <h2 class="govuk-heading-l">
+                    When to use
+                  </h2>
+                  <p>This component should be used when the dropdown menu contains more than 20 options and no other standard GDS solution (check boxes, radio buttons) create a suitable user experience.</p>
+                </div>
+
+
+      <div class="govuk-grid-column-full">
+                  <h2 class="govuk-heading-l">
+                    How to use
+                  </h2>
+                  <div class="govuk-grid-column-full" style="padding:0px;">
+
+                    <div class="govuk-grid-column-one-half howToColumn">
+                      <div class="howTo">
+                        <div class="doDontImage" >
+                          <img width="100%" src="/public/images/experimental_dropdown_5items.PNG">
+                        </div>
+                        <div class="howToDo">
+                            <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DO_Tick.png">USE</p>
+                            <p class="howToText">When the dropdown menu has more than 20 options to select from.</p>
+                        </div>
+                      </div>  
+                    </div>
+
+      
+                    <div class="govuk-grid-column-one-half howToColumn">
+                      <div class="howTo">
+                        <div class="doDontImage">
+                          <img width="100%" src="/public/images/experimental_dropdown_3items.PNG">
+        
+                        </div>
+                        <div class="howToDont">
+                          <p class="howToTitle"><img style="padding-right: 5px;position: relative;top: 2px;" src="/public/images/DONT_Cross.png">DON'T USE</p>
+                          <p class="howToText">When the dropdown menu has just a few items in it.</p>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+
+
+                        
+                </div>
+
+                <!-- <div class="govuk-grid-column-full">
+
+                  <h2 class="govuk-heading-l">
+                    Anatomy
+                  </h2>
+                  <img class="anatomy-image" src="/public/images/anatomy-expandable.jpg">
+                  <ol class="list">
+                    <li><span class="govuk-!-font-weight-bold">Form field:</span> Uses same styling as GDS</li>
+                    <li><span class="govuk-!-font-weight-bold">Icon:</span> Use an icon to convey it's a dropdown menu</li>
+                    <li><span class="govuk-!-font-weight-bold">Search:</span> The form field becomes searchable when clicked on</li>
+                    <li><span class="govuk-!-font-weight-bold">Highlighted:</span> Selected item is more noticeable</li>
+                    <li><span class="govuk-!-font-weight-bold">Scrollable:</span> Exapnded list is scrollable if required</li>
+                  </ol>
+                </div> -->
+      
+
+
+      
+
+              {% include "includes/helpimprove.html" %}  
+
+      </div>
+    </div>  
+        
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+
+
