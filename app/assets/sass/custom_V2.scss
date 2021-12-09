@@ -238,9 +238,15 @@ float: left;
 // Styling for toolkits on getting started
 
 .toolkit{
-    outline: 1px solid #D8DDE0;
     padding: 15px;
-    // max-width: 28%;
+    width: 40%;
+    padding: 3%;
+    border: 1px solid #D8DDE0;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    border-bottom-width: 4px;
 }
 
 .toolkits-container{
