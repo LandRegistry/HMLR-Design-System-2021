@@ -192,6 +192,10 @@ pre {
     padding-right: 5px;
 }
 
+/* .documentation_header{
+  width: 0%;
+  box-sizing: border-box;
+} */
 
 
 </style>
@@ -272,16 +276,27 @@ pre {
       </div>
 
 
-      <div class="govuk-grid-column-full" style="margin-bottom:50px;">
-        <h3 class="govuk-heading-m" style="margin-bottom:10px;">Page contents:</h3>
-        <ul class="govuk-list app-page-contents__list">
-          <li><a href="#what">What is this component</a></li>
-          <li><a href="#example">Example</a></li>
-          <li><a href="#why">Why was this needed</a></li>
-          <li><a href="#when">When to use</a></li>
-          <li><a href="#how">How to use</a></li>
-          <li><a href="#alternate">Alternate example</a></li>
-        </ul>
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width:30%; vertical-align: middle; padding:8px 20px 8px 0;">Component owners</th>
+              <td class="govuk-table__cell" style="padding:8px 20px 8px 0;">Andy Carr</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width:30%; vertical-align: middle; padding:8px 20px 8px 0;">Latest author</th>
+              <td class="govuk-table__cell documentation_header" style="padding:8px 20px 8px 0;">Lauren Dowling</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width:30%; vertical-align: middle; padding:8px 20px 8px 0;">Date of last edit</th>
+              <td class="govuk-table__cell" style="padding:8px 20px 8px 0;">17th November 2021</td>
+            </tr>
+            <!-- <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Link to Notion</th>
+              <td class="govuk-table__cell"><a class="govuk-link" href="#">www.notion.co.uk</a></td>
+            </tr> -->
+          </tbody>
+        </table>
       </div>
 
         <div class="govuk-grid-column-full">
@@ -792,28 +807,47 @@ pre {
         <div class="govuk-grid-column-full" style="margin-bottom: 50px;">
     
           <h2 class="govuk-heading-l">
-            Additional information
+            Component timeline
           </h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="width: 20%;border-bottom: 1px solid #b1b4b6;">Event</th>
+                <th scope="col" class="govuk-table__header" style="width: 20%;border-bottom: 1px solid #b1b4b6;">Date</th>
+                <th scope="col" class="govuk-table__header" style="width: 60%;border-bottom: 1px solid #b1b4b6;">Details</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">User research</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">30/11/2021</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">This component was used in user research that was focused on the streamlining and grouping of services within the portal platform.</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">Component creation</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">01/11/2021</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">New component created in code by Lauren Dowling, to be used in user research sessions arranged by Juan Pinto-del-Rio.</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">User research</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">19/10/2021</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">This component was presented as part of a "shopping basket" experience on portal refresh by Jon Parker.</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">Component designed</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">06/09/2021</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">New component created in Adobe XD by Andy Carr, for user research feedback sessions.</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">User need identified</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">02/09/2021</td>
+                <td class="govuk-table__cell" style="vertical-align: top; border-bottom: 1px solid #b1b4b6;">As part of a "grouping of services" workstream, Andy Carr and JRez identified the need for users to be able to interact with lots of data in a way that wasn't overwhelming. The standard GDS accordion was the starting point for this component, but it lacked some of the desired functionality e.g. interactive checkboxes.</td>
+              </tr>
+            </tbody>
+          </table>
+          
   
-          <div>
-  
-            <div class="contentButtonBox Wide">
-              <a href="status.html">
-                <p class="link">Status</p>
-                <p class="description">View the current development and research status of this component.</p>
-              </a>
-            </div>
-  
-            <div class="contentButtonBox Wide">
-              <a href="documentation.html">
-                <p class="link">Documentation</p>
-                <p class="description">Contains information on the component's owners.</p>
-              </a>
-            </div>
-  
-          </div>
-  
-      </div>
+        </div>
 
                         
                 </div>
