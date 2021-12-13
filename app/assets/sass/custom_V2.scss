@@ -200,15 +200,17 @@ float: left;
 }
 
 .active-side-menu {
-  margin: 0px 0px 6px -20px!important;
-  padding-left: 16px;
+  margin: 0px 0px 0px -20px!important;
   border-left: 4px solid #006637;
+  background: #F3F2F1;
+  padding: 6px 0px 6px 20px;
 }
 
 .active-side-menu-expanded {
-  margin: 15px 0px 15px -20px!important;
+  margin: 0px 0px 0px -20px!important;
   padding-left: 16px;
   border-left: 4px solid #006637;
+  
 }
 
 .sub-side-menu {
@@ -221,9 +223,10 @@ float: left;
     }
   
   .active-sub-side-menu {
-  margin: 15px 0px 15px 0px!important;
-  padding-left: 16px;
-  border-left: 4px solid #006637;
+    margin: 10px 0px 10px -15px !important;
+    border-left: 4px solid #006637;
+    background: #F3F2F1;
+    padding: 6px 0px 6px 30px;
   }
 
 .sideMenu ul li a {
