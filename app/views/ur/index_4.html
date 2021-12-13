@@ -192,7 +192,105 @@ pre {
     padding-right: 5px;
 }
 
+.govuk-table__header, .govuk-table__cell {
+    padding: 0px 20px 15px 0;
+}
 
+.govuk-details__summary {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    color: #0b0c0c;
+    cursor: pointer;
+}
+
+.govuk-details__summary:before {
+    top: -23px;
+    border-width: 13px 0 11px 20px;
+
+}
+
+.govuk-details[open] > .govuk-details__summary:before {
+    border-width: 20px 13px 0 11px;
+}
+
+.govuk-details {
+    margin-bottom: 0px;
+}
+
+.govuk-grid-column-full {
+    margin-bottom: 40px;
+}
+
+.govuk-details__text {
+    margin-bottom: 30px;
+}
+
+.govuk-details__text {
+    padding: 0px;
+    padding-left: 20px;
+    border-left: 0px solid #b1b4b6;
+}
+
+
+.hods-timeline {
+    overflow: hidden;
+    position: relative;
+}
+
+.hods-timeline__title {
+margin-bottom:5px;
+}
+
+
+.hods-timeline__item {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.hods-timeline__item:before {
+    background-color: #006637;
+    content: "";
+    padding-top: .3em;
+    padding-right: 30px;
+    left: 0;
+    position: absolute;
+    margin-top: .75em;
+    z-index: 1;
+}
+
+.hods-timeline:before {
+    background-color: #006637;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 2em;
+    padding-left: .3em;
+    z-index: 1;
+}
+
+.hods-timeline__title {
+    font-family: inherit;
+    display: block;
+}
+
+.hods-timeline__by, .hods-timeline__date {
+    font-family: inherit;
+    font-size: 16px;
+    display: inline;
+}
+
+.hods-timeline__by {
+  color: #006637;
+  font-weight: 600;
+}
+
+.hods-timeline__description {
+  padding-top:10px;
+}
 
 </style>
 
@@ -272,7 +370,7 @@ pre {
       </div>
 
 
-      <div class="govuk-grid-column-full" style="margin-bottom:50px;">
+      <!-- <div class="govuk-grid-column-full" style="margin-bottom:50px;">
         <h3 class="govuk-heading-m" style="margin-bottom:10px;">Page contents:</h3>
         <ul class="govuk-list app-page-contents__list">
           <li><a href="#what">What is this component</a></li>
@@ -282,6 +380,32 @@ pre {
           <li><a href="#how">How to use</a></li>
           <li><a href="#alternate">Alternate example</a></li>
         </ul>
+      </div> -->
+
+      <div class="govuk-grid-column-full">
+        <h2 id="what" class="govuk-heading-l">Overview</h2>
+        
+        
+
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width: 200px;">Component owners</th>
+              <td class="govuk-table__cell">Andy Carr, Romani Davies</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Current use</th>
+              <td class="govuk-table__cell">View Colleague's Applications</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Last updated</th>
+              <td class="govuk-table__cell"><a href="#">17th November, 2021</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
       </div>
 
         <div class="govuk-grid-column-full">
@@ -291,6 +415,103 @@ pre {
         <!-- <p>While the GDS accordion allows users to hide and show sections of related content and GDS table allows users to scan and compare information, the table inside accordion component combines both functionalities into one component.
         </p> -->
       </div>
+
+
+      <div class="govuk-grid-column-full">
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-heading-l">
+            Component status and timeline
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <div class="hods-timeline">
+    
+  
+            <div class="hods-timeline__item">
+              <h2 class="hods-timeline__title">
+                User research
+              </h2>
+              <p class="hods-timeline__by">User research</p>
+              <p class="hods-timeline__date">
+                <time datetime="2021-05-19">
+                  30/11/2021
+                </time>
+              </p>
+              <p class="hods-timeline__description">
+                This component was used in user research that was focused on the streamlining and grouping of services within the portal platform.
+              </p>
+            </div>
+
+            <div class="hods-timeline__item">
+              <h2 class="hods-timeline__title">
+                Component creation
+              </h2>
+              <p class="hods-timeline__by">Design</p>
+              <p class="hods-timeline__date">
+                <time datetime="2021-05-15">
+                  01/11/2021
+                </time>
+              </p>
+              <p class="hods-timeline__description">
+                New component created in code by Lauren Dowling, to be used in user research sessions arranged by Juan Pinto-del-Rio.
+              </p>
+            </div>
+
+            <div class="hods-timeline__item">
+              <h2 class="hods-timeline__title">
+                User research
+              </h2>
+              <p class="hods-timeline__by">User research</p>
+              <p class="hods-timeline__date">
+                <time datetime="2021-05-19">
+                  19/05/2021
+                </time>
+              </p>
+              <p class="hods-timeline__description">
+                This component was presented as part of a "shopping basket" experience on portal refresh by Jon Parker.
+              </p>
+            </div>
+  
+            <div class="hods-timeline__item">
+              <h2 class="hods-timeline__title">
+                Component designed
+              </h2>
+              <p class="hods-timeline__by">Design</p>
+              <p class="hods-timeline__date">
+                <time datetime="2021-05-15">
+                  06/09/2021
+                </time>
+              </p>
+              <p class="hods-timeline__description">
+                New component created in Adobe XD by Andy Carr, for user research feedback sessions.
+              </p>
+            </div>
+  
+            <div class="hods-timeline__item">
+              <h2 class="hods-timeline__title">
+                User need identified
+              </h2>
+              <p class="hods-timeline__by">Design</p>
+              <p class="hods-timeline__date">
+                <time datetime="2021-05-14">
+                  02/09/2021
+                </time>
+              </p>
+              <p class="hods-timeline__description">
+                As part of a "grouping of services" workstream, Andy Carr and JRez identified the need for users to be able to interact with lots of data in a way that wasn't overwhelming. The standard GDS accordion was the starting point for this component, but it lacked some of the desired functionality e.g. interactive checkboxes
+              </p>
+            </div>
+  
+          </div>
+        </div>
+      </details>
+      <p>This timeline shows the extent to which this experimental component has been tested, validated and approved.
+      </p>
+    </div>
+
+
+
 
       <div class="govuk-grid-column-full">
         <h2 id="example" class="govuk-heading-l">Example</h2>
