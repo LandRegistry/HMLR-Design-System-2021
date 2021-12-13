@@ -1,0 +1,362 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+
+
+{% block pageTitle %}
+  Getting started
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-width-container {
+    max-width: 1200px;
+}
+
+.hods-timeline {
+    overflow: hidden;
+    position: relative;
+}
+
+.hods-timeline__title {
+margin-bottom:5px;
+}
+
+
+.hods-timeline__item {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.hods-timeline__item:before {
+    background-color: #006637;
+    content: "";
+    padding-top: .3em;
+    padding-right: 30px;
+    left: 0;
+    position: absolute;
+    margin-top: .75em;
+    z-index: 1;
+}
+
+.hods-timeline:before {
+    background-color: #006637;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 2em;
+    padding-left: .3em;
+    z-index: 1;
+}
+
+.hods-timeline__title {
+    font-family: inherit;
+    display: block;
+}
+
+.hods-timeline__by, .hods-timeline__date {
+    font-family: inherit;
+    font-size: 16px;
+    display: inline;
+}
+
+.hods-timeline__by {
+  color: #006637;
+  font-weight: 600;
+}
+
+.hods-timeline__description {
+  padding-top:10px;
+}
+
+</style>
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/design/colour/">Colour</a>
+          </li>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+          <!-- <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Accessible auto-complete</a>
+          </li>
+          <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Alternate accordion</a>
+          </li> -->
+            <li class="active-sub-side-menu">
+              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Table inside accordion</a>
+            
+<!-- <ul>
+
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Overview</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px; color: #006637;font-weight:600;" href="/design/components/experimental/accordion-plus/status.html">Status</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/accordion-plus/documentation.html">Documentation</a>
+                  </li>
+                </ul> -->
+              </li>
+              <!-- <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Interactive banner</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">On-page colour toggle</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Print summary</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Radio questions</a>
+              </li>
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/radio-questions/">Search with icon</a>
+              </li> -->
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Searchable dropdown</a>
+              </li>
+              
+              <li>
+                <a href="/design/fontstypography/">Fonts & typography</a>
+              </li>
+              <li>
+                <a href="/design/icons/">Icons</a>
+              </li>
+              <!-- <li>
+                <a href="/design/images/">Images</a>
+              </li> -->
+              <li>
+                <a href="/design/layouts/">Layouts</a>
+              </li>
+              <li>
+                <a href="/design/patterns/">Patterns</a>
+              </li>
+
+        </ul>
+      </div>
+      
+
+
+    </div>
+
+    <div class="right-content">
+
+
+        <div class="govuk-grid-column-full">
+          <span class="govuk-caption-xl">HM Land Registry component</span>
+          <h1 class="govuk-heading-xl">
+            Table inside accordion
+          </h1>
+          <p class="page-subtitle">
+            This experimental component has been designed to allow users to easily identify and reveal the content relevant to them without having to look through unnecessary information. 
+          </p>
+          <p class="page-subtitle">
+            This timeline shows the extent to which this experimental component has been tested, validated and approved.
+          </p>
+    
+    
+    
+    
+            <div class="hods-timeline">
+    
+              <!-- <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Alpha deployment
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-25">
+                    25/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The experimental component is deployed to an alpha build of View colleague’s applications.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Nunjucks conversion
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-23">
+                    23/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The development team convert the experimental component to production ready code.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component review
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-22">
+                    22/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  A member of the developer team reviews the prototype code for the experimental component.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component iteration
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-21">
+                    21/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The design team iterated on the component to display groups/teams as well as all colleagues.
+                </p>
+              </div> -->
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  User research
+                </h2>
+                <p class="hods-timeline__by">User research</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-19">
+                    30/11/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  This component was used in user research that was focused on the streamlining and grouping of services within the portal platform.
+                </p>
+              </div>
+
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component creation
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-15">
+                    01/11/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  New component created in code by Lauren Dowling, to be used in user research sessions arranged by Juan Pinto-del-Rio.
+                </p>
+              </div>
+
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  User research
+                </h2>
+                <p class="hods-timeline__by">User research</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-19">
+                    19/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  This component was presented as part of a "shopping basket" experience on portal refresh by Jon Parker.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component designed
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-15">
+                    06/09/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  New component created in Adobe XD by Andy Carr, for user research feedback sessions.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  User need identified
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-14">
+                    02/09/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  As part of a "grouping of services" workstream, Andy Carr and JRez identified the need for users to be able to interact with lots of data in a way that wasn't overwhelming. The standard GDS accordion was the starting point for this component, but it lacked some of the desired functionality e.g. interactive checkboxes
+                </p>
+              </div>
+    
+            </div>
+    
+      </div>
+  
+      
+      <div class="govuk-grid-column-full" style="margin-top:50px; margin-bottom: 50px;">
+    
+        <h2 class="govuk-heading-l">
+          Additional information
+        </h2>
+
+        <div>
+
+          <div class="contentButtonBox Wide">
+            <a href="index_1.html">
+              <p class="link">Overview</p>
+              <p class="description">Learn when, what, how and why to use the component.</p>
+            </a>
+          </div>
+
+          <div class="contentButtonBox Wide">
+            <a href="documentation.html">
+              <p class="link">Documentation</p>
+              <p class="description">Contains information on the component's owners.</p>
+            </a>
+          </div>
+
+        </div>
+
+    </div>
+      
+      
+      
+      {% include "includes/helpimprove.html" %}  
+
+
+
+
+    </div>
+
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+

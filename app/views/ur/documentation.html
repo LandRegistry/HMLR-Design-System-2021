@@ -1,0 +1,310 @@
+
+{% extends "layout_designsystem_V2.html" %}
+
+
+
+{% block pageTitle %}
+  Getting started
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-width-container {
+    max-width: 1200px;
+}
+
+.searchBox {
+    border-width: 1px;
+    background-image:unset;
+    padding-left:10px;
+}
+
+
+.select2-container--default .select2-results__option--group {
+  padding: 0;
+  font-family: arial;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000;
+  line-height: 39px;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+  outline: none;
+}
+
+.select2-container {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single:focus{
+  outline: none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-results__option {
+  padding: 6px 6px 6px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px;
+  color: #000000;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  height: 39px;
+}
+
+.select2-container {
+  width: 275px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.form-label-bold {
+  font-weight: 600;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+  background-color: transparent;
+  background-size: contain;
+  border: none !important;
+  height: 20px !important;
+  width: 20px !important;
+  margin: auto !important;
+  top: 8px;
+  left: -5px;
+}
+
+.select2-search--dropdown {
+  padding: 0px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  top: -38px;
+  width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 0px solid #aaa;
+  font-family: arial;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+outline:0;
+}
+
+.select2-dropdown {
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-results__group {
+  padding: 6px 6px 6px 10px;
+}
+
+
+.select2-container--open .select2-dropdown--below {
+    width: unset;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    overflow-x: scroll;
+}
+
+.govuk-table__header{
+  width: 30%;
+}
+
+.govuk-table__cell{
+  padding: 10px 0px;
+}
+
+</style>
+
+
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Design</p>
+        <ul>
+          <li>
+            <a href="/design/colour/">Colour</a>
+          </li>
+          <li>
+            <a href="/design/components/">Components</a>
+          </li>
+          <!-- <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Accessible auto-complete</a>
+          </li>
+          <li class="sub-side-menu">
+            <a  style="font-size: 16px;" href="/design/components/experimental/print-summary/">Alternate accordion</a>
+          </li> -->
+            <li class="active-sub-side-menu">
+              <a  class="current-main" style="font-size: 16px;" href="/design/components/experimental/accordion-plus/">Table inside accordion</a>
+            
+<!-- <ul>
+
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size:16px;" href="/design/components/experimental/accordion-plus/">Overview</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;" href="/design/components/experimental/accordion-plus/status.html">Status</a>
+                  </li>
+                  <li class="sub-sub-side-menu">
+                    <a style="font-size: 16px;color: #006637;font-weight:600;" href="/design/components/experimental/accordion-plus/documentation.html">Documentation</a>
+                  </li>
+                </ul> -->
+              </li>
+
+              <li class="sub-side-menu">
+                <a  style="font-size: 16px;" href="/design/components/experimental/enhanced-dropdown/">Searchable dropdown</a>
+              </li>
+              
+              <li>
+                <a href="/design/fontstypography/">Fonts & typography</a>
+              </li>
+              <li>
+                <a href="/design/icons/">Icons</a>
+              </li>
+              <!-- <li>
+                <a href="/design/images/">Images</a>
+              </li> -->
+              <li>
+                <a href="/design/layouts/">Layouts</a>
+              </li>
+              <li>
+                <a href="/design/patterns/">Patterns</a>
+              </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="right-content">
+
+        <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">HM Land Registry component</span>
+        <h1 class="govuk-heading-xl">
+        Table inside accordion
+        </h1>
+      </div>
+
+        <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--l">Documentation details</caption>
+          <!-- <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Component owner</th>
+              <th scope="col" class="govuk-table__header">Amount</th>
+            </tr>
+          </thead> -->
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Component owners</th>
+              <td class="govuk-table__cell">Andy Carr, Romani Davies</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Latest author</th>
+              <td class="govuk-table__cell">Lauren Dowling</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of last edit</th>
+              <td class="govuk-table__cell">17th November 2021</td>
+            </tr>
+            <!-- <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Link to Notion</th>
+              <td class="govuk-table__cell"><a class="govuk-link" href="#">www.notion.co.uk</a></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="govuk-grid-column-full" style="margin-bottom: 50px;">
+    
+        <h2 class="govuk-heading-l">
+          Additional information
+        </h2>
+
+        <div>
+
+          <div class="contentButtonBox Wide">
+            <a href="index_1.html">
+              <p class="link">Overview</p>
+              <p class="description">Learn when, what, how and why to use the component.</p>
+            </a>
+          </div>
+
+          <div class="contentButtonBox Wide">
+            <a href="status.html">
+              <p class="link">Status</p>
+              <p class="description">View the current development and research status of this component.</p>
+            </a>
+          </div>
+
+        </div>
+
+    </div>
+      
+
+              {% include "includes/helpimprove.html" %}  
+
+    </div>  
+        
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
