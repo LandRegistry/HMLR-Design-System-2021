@@ -46,7 +46,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
       a {
         color: #006637;
         line-height: 50px;
-        padding: 0px;
+        padding: 0px 20px;
         text-decoration: none;
         font-weight: 600;
         font-size:19px;
@@ -113,7 +113,7 @@ govuk-body, govuk-body-m, p, a, h1, h2, h3, h4, h5, h6, govuk-heading-xl, govuk-
 
 .right-content {
 width: calc(100% - 300px);
-float: left;
+float: right;
 }
 
 
