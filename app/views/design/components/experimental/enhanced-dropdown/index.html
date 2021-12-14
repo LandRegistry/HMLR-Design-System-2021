@@ -192,6 +192,105 @@ pre {
     margin-bottom: 50px;
 }
 
+
+.govuk-details__text {
+    margin-bottom: 30px;
+}
+
+.govuk-details__text {
+    padding: 0px;
+    padding-left: 20px;
+    border-left: 0px solid #b1b4b6;
+}
+
+
+.hods-timeline {
+    overflow: hidden;
+    position: relative;
+}
+
+.hods-timeline__title {
+margin-bottom:5px;
+}
+
+
+.hods-timeline__item {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.hods-timeline__item:before {
+    background-color: #006637;
+    content: "";
+    padding-top: .3em;
+    padding-right: 30px;
+    left: 0;
+    position: absolute;
+    margin-top: .75em;
+    z-index: 1;
+}
+
+.hods-timeline:before {
+    background-color: #006637;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 2em;
+    padding-left: .3em;
+    z-index: 1;
+}
+
+.hods-timeline__title {
+    font-family: inherit;
+    display: block;
+}
+
+.hods-timeline__by, .hods-timeline__date {
+    font-family: inherit;
+    font-size: 16px;
+    display: inline;
+}
+
+.hods-timeline__by {
+  color: #006637;
+  font-weight: 600;
+}
+
+.hods-timeline__description {
+  padding-top:10px;
+}
+
+.govuk-table__header, .govuk-table__cell {
+    padding: 0px 20px 15px 0;
+}
+
+
+.govuk-details__summary {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    color: #0b0c0c;
+    cursor: pointer;
+}
+
+.govuk-details__summary:before {
+    top: -23px;
+    border-width: 13px 0 11px 20px;
+
+}
+
+.govuk-details[open] > .govuk-details__summary:before {
+    border-width: 20px 13px 0 11px;
+}
+
+.govuk-details {
+    margin-bottom: 0px;
+}
+
+
 </style>
 
 
@@ -287,7 +386,7 @@ pre {
       </div>
 
 
-      <div class="govuk-grid-column-one-third" style="">
+      <!-- <div class="govuk-grid-column-one-third" style="">
         <h3 class="govuk-heading-m" style="margin-bottom:10px;">Contents:</h3>
         <ul class="govuk-list app-page-contents__list">
           <li><a href="index.html">Overview</a></li>
@@ -305,11 +404,162 @@ pre {
           <li><a href="status.html">Status</a></li>
           <li><a href="documentation.html">Documentation</a></li>
         </ul>
+      </div> -->
+
+
+      <div class="govuk-grid-column-full">
+        <h2 id="what" class="govuk-heading-l">Overview</h2>
+        
+        
+
+        <table class="govuk-table" style="margin-bottom:0px;">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width: 200px;">Component owners</th>
+              <td class="govuk-table__cell">Andy Carr, Romani Davies</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Current use</th>
+              <td class="govuk-table__cell">View Colleague's Applications</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Last updated</th>
+              <td class="govuk-table__cell"><a href="#">17th November, 2021</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
       </div>
+
 
         <div class="govuk-grid-column-full">
         <h2 id="what" class="govuk-heading-l">What is this component</h2>
         <p>This component has been designed to allow users to easily search dropdown menus containing long lists of data without having to scroll.</p>
+      </div>
+
+
+      <div class="govuk-grid-column-full">
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text govuk-heading-l">
+              Component status
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <div class="hods-timeline">
+    
+              <!-- <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Alpha deployment
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-25">
+                    25/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The experimental component is deployed to an alpha build of View colleague’s applications.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Nunjucks conversion
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-23">
+                    23/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The development team convert the experimental component to production ready code.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component review
+                </h2>
+                <p class="hods-timeline__by">Developers</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-22">
+                    22/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  A member of the developer team reviews the prototype code for the experimental component.
+                </p>
+              </div> -->
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component iteration
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-21">
+                    21/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The design team iterated on the component to display groups/teams as well as all colleagues.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Usability testing
+                </h2>
+                <p class="hods-timeline__by">User research</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-19">
+                    19/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  The user research team tested the experimental component along with a standard dropdown menu. There was a strong consensus that the new experimental component greatly enhanced the user experience.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  Component creation
+                </h2>
+                <p class="hods-timeline__by">Design</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-15">
+                    15/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  Created an dropdown that allows users to search directly from within it, using an open source javascript resource.
+                </p>
+              </div>
+    
+              <div class="hods-timeline__item">
+                <h2 class="hods-timeline__title">
+                  User need identified
+                </h2>
+                <p class="hods-timeline__by">User research</p>
+                <p class="hods-timeline__date">
+                  <time datetime="2021-05-14">
+                    14/05/2021
+                  </time>
+                </p>
+                <p class="hods-timeline__description">
+                  User need identified during user research session for ‘view colleagues applications’. Users need to be able to select an individual easily from a list of over 200 colleagues.
+                </p>
+              </div>
+    
+            </div>
+          </div>
+        </details>
+        <p>This timeline shows the extent to which this experimental component has been tested, validated and approved.
+        </p>
       </div>
 
       <div class="govuk-grid-column-full">
