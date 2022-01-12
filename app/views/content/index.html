@@ -7,70 +7,107 @@
 
 {% block content %}
 
+
 <div class="contentSection">
 
   <div class="govuk-grid-row govuk-body">
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-7">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      <!-- <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/design/principles.html">Design principles</a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Content design</p>
+        <ul>
+          <li>
+            <a href="/content/checking.html">Checking our content</a>
+          </li>
+          <li>
+            <a href="/content/writing.html">Writing</a>
+          </li>
 
-      <h1 class="govuk-heading-xl">
-        Content design
-        </h1>
-        <p>We design using the style, spelling and grammar rules from <a href ="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</a>.</p>
-          <p>This section covers the language that is specific to us and has links to tools that you may find useful in your day-to-day work. 
-          </p>  
+        </ul>
+      </div>
+
+
+
 
     </div>
 
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-7">
-      <h2 class="govuk-heading-l">
-        Checking our content
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+          Content design
+          </h1>
+          <p>We design using the style, spelling and grammar rules from <a href ="https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style">GOV.UK style guide</a>.</p>
+            <p>This section covers the language that is specific to us and has links to tools that you may find useful in your day-to-day work. 
+            </p>  
+      </div>
+
+
+      <!-- <div class="govuk-grid-column-full">
+
+        <h2 class="govuk-heading-l">
+          Design principles
         </h2>
-        <h3 class="govuk-heading-m">Tools and methods to help write and check content</h3> 
-       
-          <div class="govuk-!-margin-bottom-7">
-              <h4 class="govuk-heading-s">Checking Content</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada, nisi ac blandit vulputate, risus diam feugiat ligula, ut semper urna purus non eros.</p>
+      </div> -->
 
-              <p><a href ="https://hemingwayapp.com/">The Hemingway app</a> highlights lengthy, complex sentences, common errors and helps you write in the active voice.</p>
 
-              <p>A design critique (or ‘crit’) is where a designer can share a piece of work in progress with others to get feedback and iterate on it.</p>
 
-              <p>Get another designer to check your work because it’s hard to spot your own mistakes.</p>
+      <div class="govuk-grid-column-full" style="margin-bottom:100px;">
+<!-- 
+        <h2 class="govuk-heading-l">
+          Design
+        </h2> -->
+
+        <div>
+
+          <div class="contentButtonBox Wide">
+            <a href="/content/checking.html">
+              <p class="link">Checking our content</p>
+              <p class="description">Tools and methods to help write and check content.</p>
+            </a>
           </div>
 
-          <div class="govuk-!-margin-bottom-7">
-            <h4 class="govuk-heading-s">Researching content with your users</h4>
-
-              <p><a href ="https://userresearch.blog.gov.uk/2014/09/02/a-simple-technique-for-evaluating-content/">The highlighter test</a> helps identify the impact of what you’re writing and how it could be made simpler. </p>
-
-              <p><a href ="https://www.nngroup.com/articles/cloze-test-reading-comprehension/">The Cloze test</a> provides evidence of how easy a text is to read and understand for your users.</p>
-
-              <p><a href ="https://userresearch.blog.gov.uk/2018/03/23/how-we-refined-our-approach-to-card-sorting/">Card sorting</a> can be a great way to help sort out the order of things, like the taxonomy of a menu. </p>
-
-              <p><a href ="https://www.nngroup.com/articles/tree-testing/">Tree testing</a> can help you see how people navigate and understand the structure and terminology of your service.</p>
+          <div class="contentButtonBox Wide">
+            <a href="/content/writing.html">
+              <p class="link">Writing</p>
+              <p class="description">Plain language makes content easier to read, understand and use.</p>
+            </a>
           </div>
+
+        </div>
 
     </div>
 
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-7">
-      <h2 class="govuk-heading-l">
-        Writing
-        </h2>
-       
-          <div class="govuk-!-margin-bottom-7">
-              <h3 class="govuk-heading-m">Plain language makes content easier to read, understand and use.</h3>
 
-              <p>The <a href ="http://www.plainenglish.co.uk/the-a-z-of-alternative-words.html">plain English campaign</a> has hundreds of alternative, plain English words.</p>
 
-              <p><a href ="https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/">The US Government plain language site</a> has lots of useful plain English alternatives, just watch out for those US spellings though! </p>
 
-          </div>
+      {% include "includes/feedback.html" %}  
 
     </div>
+    </div>
+
+
+
 
 
   </div>
 
 </div>
+
+
+
+
+
+
 
 {% endblock %}
 

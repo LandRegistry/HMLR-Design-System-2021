@@ -1,0 +1,83 @@
+
+{% extends "layout_designsystem_V2CSG.html" %}
+
+{% block pageTitle %}
+  Design system
+{% endblock %}
+
+{% block content %}
+
+
+<div class="contentSection">
+
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-full">
+    <div class="sideMenu">
+      <!-- <div class="sideMenuSection">
+        <p class="sideMenuTitle">Principles</p>
+        <ul>
+          <li>
+            <a href="/design/principles.html">Design principles</a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="sideMenuSection">
+        <p class="sideMenuTitle">Content design</p>
+        <ul>
+          <li>
+            <a href="/content/checking.html">Checking our content</a>
+          </li>
+          <li class="active-side-menu">
+            <a class="current-main" href="/content/writing.html">Writing</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="right-content">
+
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">Content design</span>
+        <h1 class="govuk-heading-xl">
+        Writing
+        </h1>
+        <p style="font-size:24px;margin-bottom:25px;">
+          Plain language makes content easier to read, understand and use.
+        </p>
+
+        <p>The <a href ="http://www.plainenglish.co.uk/the-a-z-of-alternative-words.html">plain English campaign</a> has hundreds of alternative, plain English words.</p>
+
+        <p><a href ="https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/">The US Government plain language site</a> has lots of useful plain English alternatives, just watch out for those US spellings though! </p>
+      </div>
+
+ 
+
+
+
+      {% include "includes/feedback.html" %}  
+
+    </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+
